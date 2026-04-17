@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "224390452b06216d",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa8246ad7cae4fb2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c32c203f1df210c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Misc/CTIGA_Exam_Notes.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CTIGA_Exam_Notes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2b8e330bdfa80b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bc9aa10768b7c08",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f5fd95ced0daabf5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a3eb0678d21329fc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "08fda4f336e8d8cf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "88f7a455f734c0ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "6354268e4ac2c3bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1693faf1303d174c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Portswigger/Web cache deception.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Web cache deception"
+            }
+          },
+          {
+            "id": "68f9eb0d96ba4a5f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Executable File Formats You Must Know (Beginner Notes)"
+            }
+          },
+          {
+            "id": "b1c96c660a81fc59",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "73445449d14973c0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d7b74de69ebc2376",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Executable File Formats You Must Know (Beginner Notes)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "4c32c203f1df210c",
+  "lastOpenFiles": [
+    "CEH/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
+    "Misc/CTIGA_Exam_Notes.md",
+    "Portswigger/Web cache deception.md",
+    "CEH",
+    "Prompts/Osint.md",
+    "In-depth notes/AD/Active Directory (AD) 1.md",
+    "Prompts",
+    "In-depth notes/AD/Kerberoasting Deep Dive.md",
+    "In-depth notes/AD/Kerberos Authentication.md",
+    "Daily-ADCD/2026-04-01.md",
+    "In-depth notes/AD/SMB Enumeration.md",
+    "Daily-ADCD/2026-03-31.md",
+    "Active Directory (AD).md",
+    "In-depth notes/AD/Silver Ticket Attacks.md",
+    "In-depth notes/AD/Golden Ticket & krbtgt Abuse.md",
+    "In-depth notes/AD/NTLM and Pass-the-Hash.md",
+    "ADCD/Active Directory (AD) 1.md",
+    "AD.md",
+    "Notes/Active Directory (AD).md",
+    "Misc",
+    "In-depth notes",
+    "MISC/Untitled.md",
+    "In-depth notes/AD/Privilege Escalation - Windows.md",
+    "Delegation Attacks (Constrained,Unconstrained).md",
+    "Kerberoasting Deep Dive.md",
+    "In-depth notes/AD/BloodHound & Attack Path Analysis.md",
+    "In-depth notes/AD/Shadow Credentials.md",
+    "In-depth notes/AD/gMSA and dMSA Accounts.md",
+    "In-depth notes/AD/Delegation Attacks (Constrained, Unconstrained).md",
+    "In-depth notes/AD/Authentication Coercion (PrinterBug, PetitPotam).md",
+    "Notes-fluff/files",
+    "Notes-fluff/files.zip",
+    "files.zip",
+    "Delegation Attacks (Constrained",
+    "In-depth notes/AD",
+    "Attachments/Pasted image 20260319210053.png",
+    "Untitled.canvas"
+  ]
+}
