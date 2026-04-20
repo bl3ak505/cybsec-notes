@@ -11,12 +11,14 @@
             "id": "4c32c203f1df210c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf"
+                "file": "Footprinting/Footprinting Tools — Complete Reference.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CEH_v13__Module_02_Footprinting_and_Reconnaissance"
+              "icon": "lucide-file",
+              "title": "Footprinting Tools — Complete Reference"
             }
           }
         ]
@@ -195,12 +197,12 @@
   },
   "active": "4c32c203f1df210c",
   "lastOpenFiles": [
+    "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
     "CEH/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
     "Footprinting/DNS Enumeration.md",
     "Footprinting/Footprinting Tools — Complete Reference.md",
     "Footprinting/Banner Grabbing.md",
     "Footprinting/Network Scanning.md",
-    "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
     "Footprinting/Subdomain Takeover.md",
     "Footprinting/OSINT Methodology.md",
     "Footprinting/JavaScript Recon.md",
