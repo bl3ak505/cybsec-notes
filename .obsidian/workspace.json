@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "reflected",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -195,7 +196,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "4c32c203f1df210c",
+  "active": "a3eb0678d21329fc",
   "lastOpenFiles": [
     "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
     "CEH/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
