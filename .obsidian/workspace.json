@@ -11,10 +11,12 @@
             "id": "4c32c203f1df210c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "pdf",
+              "state": {
+                "file": "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "CEH_v13__Module_02_Footprinting_and_Reconnaissance"
             }
           }
         ]
@@ -193,9 +195,10 @@
   },
   "active": "4c32c203f1df210c",
   "lastOpenFiles": [
+    "CEH/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
+    "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
     "Prompts/Osint.md",
     "Misc/CTIGA_Exam_Notes.md",
-    "CEH/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
     "Portswigger/Web cache deception.md",
     "CEH",
     "In-depth notes/AD/Active Directory (AD) 1.md",
