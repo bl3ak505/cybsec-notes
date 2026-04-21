@@ -11,12 +11,14 @@
             "id": "ff9a9929b18a2423",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf"
+                "file": "Footprinting/Footprinting Tools — Complete Reference.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CEH_v13__Module_02_Footprinting_and_Reconnaissance"
+              "icon": "lucide-file",
+              "title": "Footprinting Tools — Complete Reference"
             }
           },
           {
@@ -209,6 +211,7 @@
   },
   "active": "ff9a9929b18a2423",
   "lastOpenFiles": [
+    "Footprinting/Network Scanning.md",
     "Footprinting/Footprinting Tools — Complete Reference.md",
     "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
     "TOOLS/OSINT Tools.md",
@@ -216,7 +219,6 @@
     "Daily-ADCD/2026-03-09.md",
     "TOOLS/OSINT/Untitled.md",
     "TOOLS/OSINT",
-    "Footprinting/Network Scanning.md",
     "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
     "In-depth notes/OWASP/Authentication Failures.md",
     "Notes/OSI Model.md",
