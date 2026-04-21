@@ -11,10 +11,14 @@
             "id": "4c32c203f1df210c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "In-depth notes/OWASP/Authentication Failures.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Authentication Failures"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "session hijacking",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -193,8 +198,13 @@
   },
   "active": "4c32c203f1df210c",
   "lastOpenFiles": [
-    "Footprinting/Banner Grabbing.md",
+    "Notes/OSI Model.md",
+    "In-depth notes/AD/SMB Enumeration.md",
+    "REVERSE-ENGINEERING/Reverse Engineering.md",
+    "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
     "Footprinting/Network Scanning.md",
+    "ADCD/Nmap syntaxes.md",
+    "Footprinting/Banner Grabbing.md",
     "Footprinting/Footprinting Tools — Complete Reference.md",
     "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
     "CEH/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
@@ -221,11 +231,7 @@
     "Misc/CTIGA_Exam_Notes.md",
     "Portswigger/Web cache deception.md",
     "CEH",
-    "In-depth notes/AD/Active Directory (AD) 1.md",
     "Prompts",
-    "In-depth notes/AD/Kerberoasting Deep Dive.md",
-    "In-depth notes/AD/Kerberos Authentication.md",
-    "Daily-ADCD/2026-04-01.md",
     "Misc",
     "In-depth notes",
     "Attachments/Pasted image 20260319210053.png",

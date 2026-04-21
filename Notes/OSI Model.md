@@ -196,7 +196,8 @@ Client → ACK
 - **ARP poisoning** — send fake ARP replies to link your MAC with someone else's IP → MITM
 - **Traceroute** — maps network path using TTL manipulation
 - `nmap -sn` ping sweep operates at this layer
-
+[[Nmap syntaxes]]
+[[Network Scanning]]
 ---
 
 ## Layer 2 — Data Link Layer

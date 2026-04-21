@@ -159,6 +159,7 @@ nmap -sU --top-ports 100 target.com
 - [[Banner Grabbing]]
 - [[DNS Enumeration]]
 - [[Bug Bounty Recon Pipeline]]
+- [[Nmap syntaxes]]
 
 ---
 
