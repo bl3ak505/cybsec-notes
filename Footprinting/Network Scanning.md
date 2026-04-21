@@ -160,6 +160,7 @@ nmap -sU --top-ports 100 target.com
 - [[DNS Enumeration]]
 - [[Bug Bounty Recon Pipeline]]
 - [[Nmap syntaxes]]
+- [[CEH_s18__Module_02_Footprinting_and_Reconnaissance.pdf#page=25]]
 
 ---
 

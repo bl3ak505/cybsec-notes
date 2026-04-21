@@ -25,12 +25,14 @@
             "id": "bec9883a923e2616",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf"
+                "file": "CEH_s18__Module_02_Footprinting_and_Reconnaissance.pdf.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CEH_v13__Module_02_Footprinting_and_Reconnaissance"
+              "icon": "lucide-file",
+              "title": "CEH_s18__Module_02_Footprinting_and_Reconnaissance.pdf"
             }
           }
         ],
@@ -205,14 +207,18 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
   "active": "bec9883a923e2616",
   "lastOpenFiles": [
-    "Footprinting/Footprinting Tools — Complete Reference.md",
     "Footprinting/Network Scanning.md",
+    "CEH_s18__Module_02_Footprinting_and_Reconnaissance.pdf.md",
     "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
+    "Footprinting/Footprinting Tools — Complete Reference.md",
     "TOOLS/OSINT Tools.md",
     "TOOLS/Web.md",
     "Daily-ADCD/2026-03-09.md",
