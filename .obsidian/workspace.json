@@ -11,6 +11,18 @@
             "id": "ff9a9929b18a2423",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "CEH_v13__Module_02_Footprinting_and_Reconnaissance"
+            }
+          },
+          {
+            "id": "f5a953ae193cd968",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Footprinting/Footprinting Tools — Complete Reference.md",
@@ -197,9 +209,14 @@
   },
   "active": "ff9a9929b18a2423",
   "lastOpenFiles": [
-    "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
-    "Footprinting/Network Scanning.md",
     "Footprinting/Footprinting Tools — Complete Reference.md",
+    "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
+    "TOOLS/OSINT Tools.md",
+    "TOOLS/Web.md",
+    "Daily-ADCD/2026-03-09.md",
+    "TOOLS/OSINT/Untitled.md",
+    "TOOLS/OSINT",
+    "Footprinting/Network Scanning.md",
     "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
     "In-depth notes/OWASP/Authentication Failures.md",
     "Notes/OSI Model.md",
@@ -221,17 +238,12 @@
     "footprinting-vault/Footprinting/Network Scanning.md",
     "footprinting-vault/Footprinting/Footprinting Tools — Complete Reference.md",
     "footprinting-vault/Footprinting/DNS Enumeration.md",
-    "footprinting-vault/Footprinting/Cloud Misconfigurations.md",
-    "footprinting-vault/Footprinting/Bug Bounty Recon Pipeline.md",
-    "footprinting-vault/Footprinting/Banner Grabbing.md",
     "footprinting-vault/Footprinting",
     "footprinting-vault",
     "footprinting-vault.zip",
-    "Prompts/Osint.md",
     "CEH",
     "Prompts",
     "Misc",
-    "In-depth notes",
     "Attachments/Pasted image 20260319210053.png",
     "Untitled.canvas"
   ]
