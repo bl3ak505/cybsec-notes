@@ -8,6 +8,8 @@
 
 **Footprinting** = Phase 1 of the hacking methodology. Systematically building a digital profile of a target before any attack. **Passive** means zero direct contact with the target. **Active** means you interact with their systems directly — traffic is generated, logs are created.
 
+[[CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf]]
+
 ---
 
 ## 🧠 Core Concepts

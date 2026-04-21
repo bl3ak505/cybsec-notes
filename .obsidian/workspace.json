@@ -11,12 +11,14 @@
             "id": "ff9a9929b18a2423",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf"
+                "file": "Footprinting/Footprinting Tools — Complete Reference.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CEH_v13__Module_02_Footprinting_and_Reconnaissance"
+              "icon": "lucide-file",
+              "title": "Footprinting Tools — Complete Reference"
             }
           }
         ]
@@ -195,16 +197,16 @@
   },
   "active": "ff9a9929b18a2423",
   "lastOpenFiles": [
+    "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
+    "Footprinting/Network Scanning.md",
+    "Footprinting/Footprinting Tools — Complete Reference.md",
     "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
     "In-depth notes/OWASP/Authentication Failures.md",
     "Notes/OSI Model.md",
     "In-depth notes/AD/SMB Enumeration.md",
     "REVERSE-ENGINEERING/Reverse Engineering.md",
-    "Footprinting/Network Scanning.md",
     "ADCD/Nmap syntaxes.md",
     "Footprinting/Banner Grabbing.md",
-    "Footprinting/Footprinting Tools — Complete Reference.md",
-    "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
     "CEH/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
     "Footprinting/DNS Enumeration.md",
     "Footprinting/Subdomain Takeover.md",
@@ -226,7 +228,6 @@
     "footprinting-vault",
     "footprinting-vault.zip",
     "Prompts/Osint.md",
-    "Misc/CTIGA_Exam_Notes.md",
     "CEH",
     "Prompts",
     "Misc",
