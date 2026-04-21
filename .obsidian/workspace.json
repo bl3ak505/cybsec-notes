@@ -22,20 +22,19 @@
             }
           },
           {
-            "id": "f5a953ae193cd968",
+            "id": "bec9883a923e2616",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Footprinting/Footprinting Tools — Complete Reference.md",
-                "mode": "preview",
-                "source": false
+                "file": "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Footprinting Tools — Complete Reference"
+              "icon": "lucide-file-text",
+              "title": "CEH_v13__Module_02_Footprinting_and_Reconnaissance"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,10 +208,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "ff9a9929b18a2423",
+  "active": "bec9883a923e2616",
   "lastOpenFiles": [
-    "Footprinting/Network Scanning.md",
     "Footprinting/Footprinting Tools — Complete Reference.md",
+    "Footprinting/Network Scanning.md",
     "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
     "TOOLS/OSINT Tools.md",
     "TOOLS/Web.md",
