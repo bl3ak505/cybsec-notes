@@ -8,29 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "697c816a46b25b9c",
+            "id": "c08dff7b6dd87339",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
-                "page": 28,
-                "left": -49,
-                "top": 662,
-                "zoom": 1.8
+                "file": "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
+                "page": 1,
+                "zoom": 1
               },
               "icon": "lucide-file-text",
-              "title": "CEH_v13__Module_02_Footprinting_and_Reconnaissance"
+              "title": "CEHv13 - Module 04 - Enumeration hide01.ir"
             }
           },
           {
-            "id": "a54a3a8e8deb5a31",
+            "id": "14898d201981ba43",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "pdf",
+              "state": {
+                "file": "Books/CEH-Guide/CEH  Exam Guide, Fourth Edition by Matt Walker.pdf",
+                "page": 1,
+                "left": -13,
+                "top": 796,
+                "zoom": 1.1936274509803921
+              },
+              "icon": "lucide-file-text",
+              "title": "CEH  Exam Guide, Fourth Edition by Matt Walker"
             }
           }
         ]
@@ -210,44 +214,46 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "697c816a46b25b9c",
+  "active": "c08dff7b6dd87339",
   "lastOpenFiles": [
-    "CEH/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
-    "Footprinting/Network Scanning.md",
-    "TOOLS/Network.md",
+    "Books/CEH-Guide/CEH  Exam Guide, Fourth Edition by Matt Walker.pdf",
+    "Books/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
+    "Books/CEH-Guide",
+    "Books",
+    "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
+    "HTB/Cheatsheets/Abusing_Http_Misconfigurations_Module_Cheat_Sheet.pdf",
+    "CEH--Quick/CEH_v13__Module_03_Scanning_Networks.pdf",
+    "Notes/DNS Zone Transfers.md",
+    "ADCD/Wireless Hacking.md",
+    "Files attached/Wireless Hacking.pdf",
+    "Files attached/Pasted image 20260319210053.png",
+    "Files attached/Pasted image 20260424080121.jpg",
     "Footprinting/Footprinting Tools — Complete Reference.md",
+    "CEH--Deep/CEH-V13-Free-Resources.md",
+    "CEH--Quick/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
+    "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 02 - Footprinting and Reconnaissance hide01.ir.pdf",
+    "Footprinting/Banner Grabbing.md",
+    "Footprinting/OSINT Methodology.md",
+    "Footprinting/Network Scanning.md",
+    "Untitled.md",
+    "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 03 - Scanning Networks hide01.ir.pdf",
+    "TOOLS/Web.md",
+    "CEH-V13-Free-Resources.md",
+    "TOOLS/Network.md",
     "CEH_s18__Module_02_Footprinting_and_Reconnaissance.pdf.md",
     "TOOLS/OSINT Tools.md",
-    "TOOLS/Web.md",
     "Daily-ADCD/2026-03-09.md",
     "TOOLS/OSINT/Untitled.md",
-    "TOOLS/OSINT",
     "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
     "In-depth notes/OWASP/Authentication Failures.md",
     "Notes/OSI Model.md",
     "In-depth notes/AD/SMB Enumeration.md",
     "REVERSE-ENGINEERING/Reverse Engineering.md",
     "ADCD/Nmap syntaxes.md",
-    "Footprinting/Banner Grabbing.md",
-    "CEH/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
     "Footprinting/DNS Enumeration.md",
     "Footprinting/Subdomain Takeover.md",
-    "Footprinting/OSINT Methodology.md",
     "Footprinting/JavaScript Recon.md",
     "Footprinting/Cloud Misconfigurations.md",
-    "Footprinting/Bug Bounty Recon Pipeline.md",
-    "Footprinting",
-    "footprinting-vault/Footprinting/JavaScript Recon.md",
-    "footprinting-vault/Footprinting/Subdomain Takeover.md",
-    "footprinting-vault/Footprinting/OSINT Methodology.md",
-    "footprinting-vault/Footprinting/Network Scanning.md",
-    "footprinting-vault/Footprinting",
-    "footprinting-vault",
-    "footprinting-vault.zip",
-    "CEH",
-    "Prompts",
-    "Misc",
-    "Attachments/Pasted image 20260319210053.png",
     "Untitled.canvas"
   ]
 }
