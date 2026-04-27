@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c08dff7b6dd87339",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
-                "page": 1,
-                "zoom": 1
-              },
-              "icon": "lucide-file-text",
-              "title": "CEHv13 - Module 04 - Enumeration hide01.ir"
-            }
-          },
-          {
             "id": "14898d201981ba43",
             "type": "leaf",
             "state": {
@@ -29,15 +15,36 @@
               "state": {
                 "file": "Books/CEH-Guide/CEH  Exam Guide, Fourth Edition by Matt Walker.pdf",
                 "page": 1,
-                "left": -13,
+                "left": -8,
                 "top": 796,
-                "zoom": 1.1936274509803921
+                "zoom": 1.9901960784313726
               },
               "icon": "lucide-file-text",
               "title": "CEH  Exam Guide, Fourth Edition by Matt Walker"
             }
+          },
+          {
+            "id": "f6f1e8937d519107",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "2037a390227b6073",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -49,6 +56,7 @@
       {
         "id": "8bc9aa10768b7c08",
         "type": "tabs",
+        "dimension": 79.7979797979798,
         "children": [
           {
             "id": "f5fd95ced0daabf5",
@@ -88,6 +96,23 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "21739ad4baa34610",
+        "type": "tabs",
+        "dimension": 20.2020202020202,
+        "children": [
+          {
+            "id": "c08dff7b6dd87339",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -214,13 +239,13 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c08dff7b6dd87339",
+  "active": "2037a390227b6073",
   "lastOpenFiles": [
     "Books/CEH-Guide/CEH  Exam Guide, Fourth Edition by Matt Walker.pdf",
+    "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
     "Books/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
     "Books/CEH-Guide",
     "Books",
-    "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
     "HTB/Cheatsheets/Abusing_Http_Misconfigurations_Module_Cheat_Sheet.pdf",
     "CEH--Quick/CEH_v13__Module_03_Scanning_Networks.pdf",
     "Notes/DNS Zone Transfers.md",
