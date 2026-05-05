@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linux Terminal Cheat Sheet</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;800&display=swap');
+
+  :root {
+    --bg: #0a0c0f;
+    --surface: #0f1318;
+    --card: #141920;
+    --border: #1e2730;
+    --accent: #00ff88;
+    --accent2: #00bfff;
+    --accent3: #ff6b6b;
+    --accent4: #ffd93d;
+    --accent5: #c77dff;
+    --text: #e2e8f0;
+    --muted: #64748b;
+    --code-bg: #0d1117;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+  }
+
+  /* Grid bg */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,136,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,136,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrapper { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* Header */
+  header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+    position: sticky;
+    top: 0;
+    background: rgba(10,12,15,0.95);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .logo-area h1 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .logo-area h1 span { color: var(--accent); }
+
+  .logo-area p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .stats {
+    display: flex;
+    gap: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+  }
+
+  .stat { color: var(--muted); }
+  .stat strong { color: var(--accent); font-size: 18px; display: block; }
+
+  /* Search */
+  .search-bar {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .search-bar input {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px 12px 44px;
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .search-bar input:focus { border-color: var(--accent); }
+  .search-bar input::placeholder { color: var(--muted); }
+
+  .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 16px;
+  }
+
+  .result-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 8px;
+    min-height: 16px;
+  }
+
+  /* Category filters */
+  .filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .filter-btn.active { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 700; }
+
+  /* Section */
+  .section { margin-bottom: 40px; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .section-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .section-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    padding: 2px 8px;
+    background: var(--surface);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+  }
+
+  /* Grid */
+  .cmd-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 10px;
+  }
+
+  /* Command card */
+  .cmd-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: border-color 0.15s, transform 0.1s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cmd-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    border-radius: 3px 0 0 3px;
+    opacity: 0.8;
+  }
+
+  .cmd-card:hover {
+    border-color: #2a3340;
+    transform: translateY(-1px);
+  }
+
+  .cmd-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .cmd-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    background: var(--code-bg);
+    padding: 4px 10px;
+    border-radius: 4px;
+    word-break: break-all;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .copy-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 10px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.15s;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .copy-btn.copied { border-color: var(--accent); color: var(--accent); }
+
+  .cmd-desc {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .cmd-tag {
+    display: inline-block;
+    font-size: 9px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    opacity: 0.7;
+  }
+
+  /* Category colors */
+  .cat-nav .cmd-card::before { background: #64748b; }
+  .cat-files .cmd-card::before { background: var(--accent); }
+  .cat-perms .cmd-card::before { background: var(--accent3); }
+  .cat-proc .cmd-card::before { background: var(--accent2); }
+  .cat-net .cmd-card::before { background: var(--accent4); }
+  .cat-archive .cmd-card::before { background: #fb923c; }
+  .cat-text .cmd-card::before { background: var(--accent5); }
+  .cat-sys .cmd-card::before { background: #34d399; }
+  .cat-search .cmd-card::before { background: #f472b6; }
+  .cat-disk .cmd-card::before { background: #a78bfa; }
+  .cat-users .cmd-card::before { background: #38bdf8; }
+  .cat-ssh .cmd-card::before { background: #fb7185; }
+  .cat-pkg .cmd-card::before { background: #a3e635; }
+  .cat-misc .cmd-card::before { background: #fdba74; }
+  .cat-sec .cmd-card::before { background: #f87171; }
+  .cat-scripting .cmd-card::before { background: #818cf8; }
+
+  /* section icon colors */
+  .icon-nav { background: rgba(100,116,139,0.15); }
+  .icon-files { background: rgba(0,255,136,0.1); }
+  .icon-perms { background: rgba(255,107,107,0.1); }
+  .icon-proc { background: rgba(0,191,255,0.1); }
+  .icon-net { background: rgba(255,217,61,0.1); }
+  .icon-archive { background: rgba(251,146,60,0.1); }
+  .icon-text { background: rgba(199,125,255,0.1); }
+  .icon-sys { background: rgba(52,211,153,0.1); }
+  .icon-search { background: rgba(244,114,182,0.1); }
+  .icon-disk { background: rgba(167,139,250,0.1); }
+  .icon-users { background: rgba(56,189,248,0.1); }
+  .icon-ssh { background: rgba(251,113,133,0.1); }
+  .icon-pkg { background: rgba(163,230,53,0.1); }
+  .icon-misc { background: rgba(253,186,116,0.1); }
+  .icon-sec { background: rgba(248,113,113,0.1); }
+  .icon-scripting { background: rgba(129,140,248,0.1); }
+
+  /* Tag colors matching category */
+  .tag-nav { background: rgba(100,116,139,0.2); color: #94a3b8; }
+  .tag-files { background: rgba(0,255,136,0.1); color: var(--accent); }
+  .tag-perms { background: rgba(255,107,107,0.1); color: var(--accent3); }
+  .tag-proc { background: rgba(0,191,255,0.1); color: var(--accent2); }
+  .tag-net { background: rgba(255,217,61,0.1); color: var(--accent4); }
+  .tag-archive { background: rgba(251,146,60,0.1); color: #fb923c; }
+  .tag-text { background: rgba(199,125,255,0.1); color: var(--accent5); }
+  .tag-sys { background: rgba(52,211,153,0.1); color: #34d399; }
+  .tag-search { background: rgba(244,114,182,0.1); color: #f472b6; }
+  .tag-disk { background: rgba(167,139,250,0.1); color: #a78bfa; }
+  .tag-users { background: rgba(56,189,248,0.1); color: #38bdf8; }
+  .tag-ssh { background: rgba(251,113,133,0.1); color: #fb7185; }
+  .tag-pkg { background: rgba(163,230,53,0.1); color: #a3e635; }
+  .tag-misc { background: rgba(253,186,116,0.1); color: #fdba74; }
+  .tag-sec { background: rgba(248,113,113,0.1); color: #f87171; }
+  .tag-scripting { background: rgba(129,140,248,0.1); color: #818cf8; }
+
+  .hidden { display: none !important; }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--accent);
+    color: var(--bg);
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+
+  .toast.show { opacity: 1; transform: translateY(0); }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  @media (max-width: 600px) {
+    .cmd-grid { grid-template-columns: 1fr; }
+    .header-inner { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <h1>Linux Terminal <span>Cheat Sheet</span></h1>
+        <p>bleak@ubuntu ~ # everything you need, nothing you don't</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong id="total-count">0</strong>commands</div>
+        <div class="stat"><strong>16</strong>categories</div>
+      </div>
+    </div>
+    <div class="search-bar">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="search" placeholder="search commands, flags, descriptions..." autocomplete="off" spellcheck="false">
+    </div>
+    <div class="result-count" id="result-count"></div>
+  </header>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-cat="all">All</button>
+  </div>
+
+  <div id="content"></div>
+</div>
+
+<div class="toast" id="toast">Copied!</div>
+
+<script>
+const data = [
+  {
+    id: 'nav',
+    label: 'Navigation',
+    icon: '📁',
+    iconClass: 'icon-nav',
+    cmds: [
+      { cmd: 'pwd', desc: 'Print working directory' },
+      { cmd: 'cd /path/to/dir', desc: 'Change directory' },
+      { cmd: 'cd ~', desc: 'Go to home directory' },
+      { cmd: 'cd -', desc: 'Go to previous directory' },
+      { cmd: 'cd ..', desc: 'Go up one level' },
+      { cmd: 'ls', desc: 'List files in current dir' },
+      { cmd: 'ls -la', desc: 'List all files with permissions (long format)' },
+      { cmd: 'ls -lh', desc: 'List with human-readable file sizes' },
+      { cmd: 'ls -lt', desc: 'List sorted by modification time' },
+      { cmd: 'ls -R', desc: 'Recursively list all subdirectories' },
+      { cmd: 'tree', desc: 'Show directory structure as a tree' },
+      { cmd: 'tree -L 2', desc: 'Tree limited to 2 levels deep' },
+    ]
+  },
+  {
+    id: 'files',
+    label: 'File Operations',
+    icon: '📄',
+    iconClass: 'icon-files',
+    cmds: [
+      { cmd: 'touch file.txt', desc: 'Create empty file or update timestamp' },
+      { cmd: 'cp src dst', desc: 'Copy file from src to dst' },
+      { cmd: 'cp -r src/ dst/', desc: 'Recursively copy directory' },
+      { cmd: 'mv src dst', desc: 'Move or rename file/directory' },
+      { cmd: 'rm file', desc: 'Delete a file' },
+      { cmd: 'rm -rf dir/', desc: 'Force delete directory recursively' },
+      { cmd: 'mkdir dirname', desc: 'Create a directory' },
+      { cmd: 'mkdir -p a/b/c', desc: 'Create nested directories' },
+      { cmd: 'rmdir dirname', desc: 'Remove empty directory' },
+      { cmd: 'ln -s target link', desc: 'Create a symbolic link' },
+      { cmd: 'ln target link', desc: 'Create a hard link' },
+      { cmd: 'stat file', desc: 'Show detailed file metadata' },
+      { cmd: 'file filename', desc: 'Detect file type' },
+      { cmd: 'basename /path/file', desc: 'Extract filename from path' },
+      { cmd: 'dirname /path/file', desc: 'Extract directory from path' },
+      { cmd: 'realpath file', desc: 'Get absolute path of a file' },
+      { cmd: 'truncate -s 0 file', desc: 'Empty a file without deleting it' },
+    ]
+  },
+  {
+    id: 'perms',
+    label: 'Permissions & Ownership',
+    icon: '🔐',
+    iconClass: 'icon-perms',
+    cmds: [
+      { cmd: 'chmod 755 file', desc: 'Set rwxr-xr-x permissions' },
+      { cmd: 'chmod +x file', desc: 'Make file executable' },
+      { cmd: 'chmod -R 644 dir/', desc: 'Recursively set permissions' },
+      { cmd: 'chown user:group file', desc: 'Change file owner and group' },
+      { cmd: 'chown -R user dir/', desc: 'Recursively change ownership' },
+      { cmd: 'chgrp groupname file', desc: 'Change group ownership' },
+      { cmd: 'umask', desc: 'Show default permission mask' },
+      { cmd: 'umask 022', desc: 'Set default permission mask' },
+      { cmd: 'getfacl file', desc: 'Get file ACL (access control list)' },
+      { cmd: 'setfacl -m u:user:rx file', desc: 'Set ACL for specific user' },
+      { cmd: 'lsattr file', desc: 'List file attributes' },
+      { cmd: 'chattr +i file', desc: 'Make file immutable' },
+    ]
+  },
+  {
+    id: 'text',
+    label: 'Text Processing',
+    icon: '📝',
+    iconClass: 'icon-text',
+    cmds: [
+      { cmd: 'cat file', desc: 'Print file contents to stdout' },
+      { cmd: 'cat -n file', desc: 'Print with line numbers' },
+      { cmd: 'tac file', desc: 'Print file in reverse line order' },
+      { cmd: 'head -n 20 file', desc: 'Print first 20 lines' },
+      { cmd: 'tail -n 20 file', desc: 'Print last 20 lines' },
+      { cmd: 'tail -f file', desc: 'Follow file output in real-time (logs)' },
+      { cmd: 'less file', desc: 'Paginated file viewer (q to quit)' },
+      { cmd: 'more file', desc: 'Simple paginator' },
+      { cmd: 'wc -l file', desc: 'Count lines in file' },
+      { cmd: 'wc -w file', desc: 'Count words in file' },
+      { cmd: 'sort file', desc: 'Sort lines alphabetically' },
+      { cmd: 'sort -n file', desc: 'Sort numerically' },
+      { cmd: 'sort -u file', desc: 'Sort and remove duplicates' },
+      { cmd: 'uniq file', desc: 'Remove consecutive duplicate lines' },
+      { cmd: 'uniq -c file', desc: 'Count occurrences of each line' },
+      { cmd: 'cut -d: -f1 file', desc: 'Cut field 1 with : as delimiter' },
+      { cmd: 'awk \'{print $1}\' file', desc: 'Print first column with awk' },
+      { cmd: 'awk -F: \'{print $1}\' file', desc: 'Use : as awk field separator' },
+      { cmd: 'sed \'s/foo/bar/g\' file', desc: 'Replace all foo with bar' },
+      { cmd: 'sed -i \'s/foo/bar/g\' file', desc: 'Replace in-place (edit file)' },
+      { cmd: 'sed -n \'10,20p\' file', desc: 'Print lines 10–20' },
+      { cmd: 'tr \'a-z\' \'A-Z\'', desc: 'Translate lowercase to uppercase' },
+      { cmd: 'tr -d \'\\n\'', desc: 'Delete newline characters' },
+      { cmd: 'paste file1 file2', desc: 'Merge files side by side' },
+      { cmd: 'column -t file', desc: 'Format text into columns' },
+      { cmd: 'diff file1 file2', desc: 'Compare two files line by line' },
+      { cmd: 'comm file1 file2', desc: 'Compare sorted files line by line' },
+      { cmd: 'strings file', desc: 'Extract printable strings from binary' },
+      { cmd: 'xxd file', desc: 'Hex dump of a file' },
+      { cmd: 'od -c file', desc: 'Octal dump with char representation' },
+    ]
+  },
+  {
+    id: 'search',
+    label: 'Search & Find',
+    icon: '🔍',
+    iconClass: 'icon-search',
+    cmds: [
+      { cmd: 'find / -name "file.txt"', desc: 'Find file by name from root' },
+      { cmd: 'find . -type f -name "*.py"', desc: 'Find all .py files recursively' },
+      { cmd: 'find . -type d', desc: 'Find only directories' },
+      { cmd: 'find . -mtime -7', desc: 'Files modified in last 7 days' },
+      { cmd: 'find . -size +10M', desc: 'Files larger than 10MB' },
+      { cmd: 'find . -perm 777', desc: 'Find world-writable files' },
+      { cmd: 'find . -user root', desc: 'Find files owned by root' },
+      { cmd: 'find . -exec rm {} \\;', desc: 'Execute command on each found file' },
+      { cmd: 'grep "pattern" file', desc: 'Search for pattern in file' },
+      { cmd: 'grep -r "pattern" .', desc: 'Recursive search in directory' },
+      { cmd: 'grep -i "pattern" file', desc: 'Case-insensitive search' },
+      { cmd: 'grep -n "pattern" file', desc: 'Show line numbers with matches' },
+      { cmd: 'grep -v "pattern" file', desc: 'Invert match (show non-matching)' },
+      { cmd: 'grep -o "pattern" file', desc: 'Show only matched part' },
+      { cmd: 'grep -E "regex" file', desc: 'Extended regex search' },
+      { cmd: 'grep -c "pattern" file', desc: 'Count matching lines' },
+      { cmd: 'grep -l "pattern" *.txt', desc: 'List files containing pattern' },
+      { cmd: 'grep -A 3 "pattern" file', desc: 'Show 3 lines after match' },
+      { cmd: 'grep -B 3 "pattern" file', desc: 'Show 3 lines before match' },
+      { cmd: 'locate filename', desc: 'Fast file search using database' },
+      { cmd: 'updatedb', desc: 'Update locate database' },
+      { cmd: 'which cmd', desc: 'Show path of command binary' },
+      { cmd: 'whereis cmd', desc: 'Show binary, source, man page paths' },
+      { cmd: 'type cmd', desc: 'Show how cmd would be interpreted' },
+    ]
+  },
+  {
+    id: 'proc',
+    label: 'Process Management',
+    icon: '⚙️',
+    iconClass: 'icon-proc',
+    cmds: [
+      { cmd: 'ps aux', desc: 'List all running processes' },
+      { cmd: 'ps -ef', desc: 'Full-format process list' },
+      { cmd: 'ps aux | grep name', desc: 'Filter processes by name' },
+      { cmd: 'pgrep name', desc: 'Get PID by process name' },
+      { cmd: 'pidof name', desc: 'Find PID of a running program' },
+      { cmd: 'top', desc: 'Interactive process viewer' },
+      { cmd: 'htop', desc: 'Enhanced interactive process viewer' },
+      { cmd: 'kill PID', desc: 'Send SIGTERM to process' },
+      { cmd: 'kill -9 PID', desc: 'Force kill process (SIGKILL)' },
+      { cmd: 'killall name', desc: 'Kill all processes by name' },
+      { cmd: 'pkill name', desc: 'Kill processes matching name' },
+      { cmd: 'nice -n 10 cmd', desc: 'Run cmd with lower priority' },
+      { cmd: 'renice 10 PID', desc: 'Change priority of running process' },
+      { cmd: 'bg', desc: 'Resume job in background' },
+      { cmd: 'fg', desc: 'Bring background job to foreground' },
+      { cmd: 'jobs', desc: 'List background jobs' },
+      { cmd: 'nohup cmd &', desc: 'Run cmd immune to hangups' },
+      { cmd: 'cmd &', desc: 'Run command in background' },
+      { cmd: 'wait', desc: 'Wait for background processes to finish' },
+      { cmd: 'disown %1', desc: 'Remove job from shell\'s job table' },
+      { cmd: 'strace -p PID', desc: 'Trace system calls of a process' },
+      { cmd: 'lsof -p PID', desc: 'List files opened by PID' },
+      { cmd: 'lsof -i :80', desc: 'List processes using port 80' },
+    ]
+  },
+  {
+    id: 'net',
+    label: 'Networking',
+    icon: '🌐',
+    iconClass: 'icon-net',
+    cmds: [
+      { cmd: 'ip a', desc: 'Show all network interfaces and IPs' },
+      { cmd: 'ip r', desc: 'Show routing table' },
+      { cmd: 'ip link set eth0 up', desc: 'Bring interface up' },
+      { cmd: 'ifconfig', desc: 'Network interface config (legacy)' },
+      { cmd: 'ping -c 4 host', desc: 'Send 4 ICMP pings to host' },
+      { cmd: 'ping6 host', desc: 'Ping using IPv6' },
+      { cmd: 'traceroute host', desc: 'Trace packet route to host' },
+      { cmd: 'tracepath host', desc: 'Trace path, no root required' },
+      { cmd: 'mtr host', desc: 'Combined ping + traceroute tool' },
+      { cmd: 'nslookup domain', desc: 'DNS lookup for domain' },
+      { cmd: 'dig domain', desc: 'Detailed DNS query' },
+      { cmd: 'dig +short domain', desc: 'Short DNS answer only' },
+      { cmd: 'dig domain MX', desc: 'Query MX records' },
+      { cmd: 'host domain', desc: 'Simple DNS lookup' },
+      { cmd: 'whois domain', desc: 'WHOIS lookup for domain' },
+      { cmd: 'netstat -tuln', desc: 'Show listening ports (TCP/UDP)' },
+      { cmd: 'ss -tuln', desc: 'Socket stats — faster than netstat' },
+      { cmd: 'ss -tp', desc: 'Show TCP sockets with process info' },
+      { cmd: 'curl -I url', desc: 'Fetch HTTP headers only' },
+      { cmd: 'curl -o file url', desc: 'Download URL to file' },
+      { cmd: 'curl -X POST -d "data" url', desc: 'POST request with data' },
+      { cmd: 'wget url', desc: 'Download file from URL' },
+      { cmd: 'wget -r url', desc: 'Recursively download website' },
+      { cmd: 'nc -lvp 4444', desc: 'Netcat listen on port 4444' },
+      { cmd: 'nc host 80', desc: 'Connect to host on port 80' },
+      { cmd: 'nmap -sV host', desc: 'Scan with service version detection' },
+      { cmd: 'nmap -A host', desc: 'Aggressive scan (OS, services, scripts)' },
+      { cmd: 'iptables -L', desc: 'List current firewall rules' },
+      { cmd: 'ufw status', desc: 'Show UFW firewall status' },
+      { cmd: 'ufw allow 22', desc: 'Allow SSH through UFW' },
+      { cmd: 'tcpdump -i eth0', desc: 'Capture packets on interface' },
+      { cmd: 'tcpdump port 80', desc: 'Capture HTTP traffic only' },
+      { cmd: 'arp -a', desc: 'Show ARP table (IP→MAC mappings)' },
+    ]
+  },
+  {
+    id: 'archive',
+    label: 'Archive & Compression',
+    icon: '📦',
+    iconClass: 'icon-archive',
+    cmds: [
+      { cmd: 'tar -czf out.tar.gz dir/', desc: 'Create gzip-compressed tar archive' },
+      { cmd: 'tar -xzf file.tar.gz', desc: 'Extract gzip tar archive' },
+      { cmd: 'tar -cjf out.tar.bz2 dir/', desc: 'Create bzip2-compressed tar' },
+      { cmd: 'tar -xjf file.tar.bz2', desc: 'Extract bzip2 tar archive' },
+      { cmd: 'tar -tf file.tar.gz', desc: 'List contents of tar without extracting' },
+      { cmd: 'tar -xzf file.tar.gz -C /path/', desc: 'Extract to specific directory' },
+      { cmd: 'gzip file', desc: 'Compress file with gzip' },
+      { cmd: 'gunzip file.gz', desc: 'Decompress gzip file' },
+      { cmd: 'bzip2 file', desc: 'Compress with bzip2' },
+      { cmd: 'bunzip2 file.bz2', desc: 'Decompress bzip2 file' },
+      { cmd: 'xz file', desc: 'Compress with xz (high compression)' },
+      { cmd: 'unxz file.xz', desc: 'Decompress xz file' },
+      { cmd: 'zip -r out.zip dir/', desc: 'Create zip archive' },
+      { cmd: 'unzip file.zip', desc: 'Extract zip archive' },
+      { cmd: 'unzip -l file.zip', desc: 'List zip contents without extracting' },
+      { cmd: '7z a out.7z dir/', desc: 'Create 7z archive' },
+      { cmd: '7z x file.7z', desc: 'Extract 7z archive' },
+    ]
+  },
+  {
+    id: 'disk',
+    label: 'Disk & Storage',
+    icon: '💾',
+    iconClass: 'icon-disk',
+    cmds: [
+      { cmd: 'df -h', desc: 'Show disk usage (human-readable)' },
+      { cmd: 'df -i', desc: 'Show inode usage' },
+      { cmd: 'du -sh dir/', desc: 'Show total size of directory' },
+      { cmd: 'du -ah dir/', desc: 'Show size of all files recursively' },
+      { cmd: 'du -sh * | sort -h', desc: 'Sort directories by size' },
+      { cmd: 'lsblk', desc: 'List block devices (disks, partitions)' },
+      { cmd: 'fdisk -l', desc: 'List partition table (root)' },
+      { cmd: 'mount', desc: 'List all mounted filesystems' },
+      { cmd: 'mount /dev/sdb1 /mnt', desc: 'Mount device to /mnt' },
+      { cmd: 'umount /mnt', desc: 'Unmount filesystem' },
+      { cmd: 'blkid', desc: 'Show block device UUIDs and types' },
+      { cmd: 'fsck /dev/sdb1', desc: 'Check filesystem integrity' },
+      { cmd: 'dd if=/dev/sda of=disk.img', desc: 'Clone disk to image file' },
+      { cmd: 'dd if=/dev/zero of=file bs=1M count=100', desc: 'Create 100MB zero-filled file' },
+      { cmd: 'ncdu', desc: 'Interactive disk usage analyzer (ncurses)' },
+      { cmd: 'iostat', desc: 'Show CPU and I/O stats' },
+      { cmd: 'iotop', desc: 'Interactive I/O usage per process' },
+    ]
+  },
+  {
+    id: 'sys',
+    label: 'System Info',
+    icon: '🖥️',
+    iconClass: 'icon-sys',
+    cmds: [
+      { cmd: 'uname -a', desc: 'Show all kernel/system info' },
+      { cmd: 'uname -r', desc: 'Show kernel version only' },
+      { cmd: 'hostname', desc: 'Show system hostname' },
+      { cmd: 'hostnamectl', desc: 'Show/set hostname and OS info' },
+      { cmd: 'uptime', desc: 'Show system uptime and load average' },
+      { cmd: 'date', desc: 'Show current date and time' },
+      { cmd: 'timedatectl', desc: 'Show and set timezone/time' },
+      { cmd: 'cal', desc: 'Show calendar for current month' },
+      { cmd: 'cat /etc/os-release', desc: 'Show Linux distribution info' },
+      { cmd: 'cat /proc/cpuinfo', desc: 'Show detailed CPU information' },
+      { cmd: 'cat /proc/meminfo', desc: 'Show detailed memory info' },
+      { cmd: 'free -h', desc: 'Show RAM and swap usage' },
+      { cmd: 'vmstat 1', desc: 'VM stats updated every 1 second' },
+      { cmd: 'lscpu', desc: 'Show CPU architecture details' },
+      { cmd: 'lshw', desc: 'Show detailed hardware info' },
+      { cmd: 'lspci', desc: 'List PCI devices' },
+      { cmd: 'lsusb', desc: 'List USB devices' },
+      { cmd: 'dmidecode', desc: 'Show BIOS/hardware info from DMI' },
+      { cmd: 'dmesg | tail', desc: 'Show recent kernel messages' },
+      { cmd: 'journalctl -xe', desc: 'Show recent systemd journal errors' },
+      { cmd: 'journalctl -f', desc: 'Follow journal in real time' },
+      { cmd: 'systemctl status', desc: 'Show overall system status' },
+      { cmd: 'systemctl list-units', desc: 'List active systemd units' },
+      { cmd: 'systemctl start/stop svc', desc: 'Start or stop a service' },
+      { cmd: 'systemctl enable svc', desc: 'Enable service at boot' },
+      { cmd: 'systemctl disable svc', desc: 'Disable service at boot' },
+      { cmd: 'systemctl restart svc', desc: 'Restart a service' },
+    ]
+  },
+  {
+    id: 'users',
+    label: 'Users & Groups',
+    icon: '👤',
+    iconClass: 'icon-users',
+    cmds: [
+      { cmd: 'whoami', desc: 'Show current username' },
+      { cmd: 'id', desc: 'Show UID, GID, and groups' },
+      { cmd: 'who', desc: 'Show who is logged in' },
+      { cmd: 'w', desc: 'Show who is logged in and what they\'re doing' },
+      { cmd: 'last', desc: 'Show login history' },
+      { cmd: 'lastlog', desc: 'Last login for all users' },
+      { cmd: 'useradd username', desc: 'Create a new user' },
+      { cmd: 'useradd -m -s /bin/bash user', desc: 'Create user with home and bash shell' },
+      { cmd: 'userdel -r username', desc: 'Delete user and their home directory' },
+      { cmd: 'usermod -aG sudo user', desc: 'Add user to sudo group' },
+      { cmd: 'passwd username', desc: 'Set/change user password' },
+      { cmd: 'su - username', desc: 'Switch to user with their environment' },
+      { cmd: 'sudo cmd', desc: 'Run command as root' },
+      { cmd: 'sudo -i', desc: 'Open interactive root shell' },
+      { cmd: 'groupadd groupname', desc: 'Create a new group' },
+      { cmd: 'groups username', desc: 'List groups a user belongs to' },
+      { cmd: 'cat /etc/passwd', desc: 'List all users' },
+      { cmd: 'cat /etc/shadow', desc: 'List password hashes (root only)' },
+      { cmd: 'cat /etc/group', desc: 'List all groups' },
+    ]
+  },
+  {
+    id: 'ssh',
+    label: 'SSH & Remote',
+    icon: '🔌',
+    iconClass: 'icon-ssh',
+    cmds: [
+      { cmd: 'ssh user@host', desc: 'SSH into remote host' },
+      { cmd: 'ssh -p 2222 user@host', desc: 'SSH on custom port' },
+      { cmd: 'ssh -i key.pem user@host', desc: 'SSH with private key' },
+      { cmd: 'ssh -L 8080:localhost:80 user@host', desc: 'Local port forwarding' },
+      { cmd: 'ssh -R 8080:localhost:80 user@host', desc: 'Remote port forwarding' },
+      { cmd: 'ssh -D 1080 user@host', desc: 'SOCKS5 proxy via SSH' },
+      { cmd: 'ssh -N -f user@host', desc: 'SSH tunnel without shell (background)' },
+      { cmd: 'ssh-keygen -t ed25519', desc: 'Generate ED25519 keypair' },
+      { cmd: 'ssh-copy-id user@host', desc: 'Copy public key to remote host' },
+      { cmd: 'scp file user@host:/path', desc: 'Copy file to remote host' },
+      { cmd: 'scp user@host:/path file', desc: 'Copy file from remote host' },
+      { cmd: 'scp -r dir/ user@host:/path/', desc: 'Copy directory to remote' },
+      { cmd: 'rsync -avz src/ user@host:/dst/', desc: 'Sync directory to remote' },
+      { cmd: 'rsync -avz --delete src/ dst/', desc: 'Sync and delete removed files' },
+      { cmd: 'sftp user@host', desc: 'Interactive SFTP session' },
+      { cmd: 'cat ~/.ssh/authorized_keys', desc: 'View authorized public keys' },
+    ]
+  },
+  {
+    id: 'pkg',
+    label: 'Package Management',
+    icon: '📥',
+    iconClass: 'icon-pkg',
+    cmds: [
+      { cmd: 'apt update', desc: 'Refresh package index' },
+      { cmd: 'apt upgrade', desc: 'Upgrade all installed packages' },
+      { cmd: 'apt install pkg', desc: 'Install a package' },
+      { cmd: 'apt remove pkg', desc: 'Remove package (keep config)' },
+      { cmd: 'apt purge pkg', desc: 'Remove package and config files' },
+      { cmd: 'apt autoremove', desc: 'Remove unused dependencies' },
+      { cmd: 'apt search pkg', desc: 'Search for a package' },
+      { cmd: 'apt show pkg', desc: 'Show package details' },
+      { cmd: 'apt list --installed', desc: 'List installed packages' },
+      { cmd: 'dpkg -l', desc: 'List all installed .deb packages' },
+      { cmd: 'dpkg -i file.deb', desc: 'Install a .deb package manually' },
+      { cmd: 'dpkg -r pkgname', desc: 'Remove installed deb package' },
+      { cmd: 'dpkg -L pkgname', desc: 'List files installed by package' },
+      { cmd: 'dpkg -S /path/file', desc: 'Find which package owns a file' },
+      { cmd: 'snap install pkg', desc: 'Install snap package' },
+      { cmd: 'snap list', desc: 'List installed snaps' },
+      { cmd: 'pip install pkg', desc: 'Install Python package' },
+      { cmd: 'pip list', desc: 'List installed Python packages' },
+      { cmd: 'pip freeze > req.txt', desc: 'Export installed packages to file' },
+    ]
+  },
+  {
+    id: 'sec',
+    label: 'Security & Pentesting',
+    icon: '🛡️',
+    iconClass: 'icon-sec',
+    cmds: [
+      { cmd: 'nmap -sC -sV -oN out.txt host', desc: 'Default scripts, version scan, save output' },
+      { cmd: 'nmap -p- host', desc: 'Scan all 65535 ports' },
+      { cmd: 'nmap -sU host', desc: 'UDP scan' },
+      { cmd: 'nmap --script vuln host', desc: 'Run vuln NSE scripts' },
+      { cmd: 'gobuster dir -u url -w wordlist', desc: 'Directory brute-force' },
+      { cmd: 'ffuf -u url/FUZZ -w wordlist', desc: 'Fast web fuzzer' },
+      { cmd: 'sqlmap -u "url?id=1" --dbs', desc: 'SQLi auto-exploit and dump DBs' },
+      { cmd: 'hydra -l user -P pass.txt ssh://host', desc: 'Brute-force SSH login' },
+      { cmd: 'hashcat -m 0 hash.txt wordlist', desc: 'Crack MD5 hashes with wordlist' },
+      { cmd: 'john hash.txt --wordlist=rockyou.txt', desc: 'Crack hashes with John' },
+      { cmd: 'openssl s_client -connect host:443', desc: 'Test SSL/TLS connection' },
+      { cmd: 'openssl enc -aes-256-cbc -in f -out f.enc', desc: 'Encrypt file with AES-256' },
+      { cmd: 'gpg --gen-key', desc: 'Generate GPG keypair' },
+      { cmd: 'gpg -e -r user file', desc: 'Encrypt file for recipient' },
+      { cmd: 'md5sum file', desc: 'Compute MD5 hash of file' },
+      { cmd: 'sha256sum file', desc: 'Compute SHA-256 hash of file' },
+      { cmd: 'base64 file', desc: 'Encode file to base64' },
+      { cmd: 'base64 -d file', desc: 'Decode base64' },
+      { cmd: 'whoami && id && uname -a', desc: 'Post-exploit basic enum one-liner' },
+      { cmd: 'cat /etc/passwd | cut -d: -f1', desc: 'List all users (quick)' },
+      { cmd: 'find / -perm -4000 2>/dev/null', desc: 'Find SUID binaries (privesc)' },
+      { cmd: 'find / -writable -type f 2>/dev/null', desc: 'Find world-writable files' },
+      { cmd: 'crontab -l', desc: 'List current user\'s cron jobs' },
+      { cmd: 'cat /etc/crontab', desc: 'View system-wide cron jobs' },
+      { cmd: 'sudo -l', desc: 'List sudo privileges for current user' },
+      { cmd: 'env', desc: 'Print all environment variables' },
+      { cmd: 'history', desc: 'Show command history' },
+      { cmd: 'auditctl -l', desc: 'List audit rules (root)' },
+    ]
+  },
+  {
+    id: 'scripting',
+    label: 'Scripting & Automation',
+    icon: '🤖',
+    iconClass: 'icon-scripting',
+    cmds: [
+      { cmd: '#!/bin/bash', desc: 'Bash shebang — first line of scripts' },
+      { cmd: 'chmod +x script.sh && ./script.sh', desc: 'Make script executable and run' },
+      { cmd: 'bash -x script.sh', desc: 'Run script in debug mode' },
+      { cmd: 'for i in {1..5}; do echo $i; done', desc: 'Simple for loop' },
+      { cmd: 'while read line; do echo $line; done < file', desc: 'Read file line by line' },
+      { cmd: 'if [ -f file ]; then echo "exists"; fi', desc: 'Check if file exists' },
+      { cmd: 'cmd1 && cmd2', desc: 'Run cmd2 only if cmd1 succeeds' },
+      { cmd: 'cmd1 || cmd2', desc: 'Run cmd2 only if cmd1 fails' },
+      { cmd: 'cmd1 | cmd2', desc: 'Pipe stdout of cmd1 to cmd2' },
+      { cmd: 'cmd > file', desc: 'Redirect stdout to file (overwrite)' },
+      { cmd: 'cmd >> file', desc: 'Append stdout to file' },
+      { cmd: 'cmd 2>&1', desc: 'Redirect stderr to stdout' },
+      { cmd: 'cmd 2>/dev/null', desc: 'Discard stderr' },
+      { cmd: 'cmd1 | tee file', desc: 'Output to both stdout and file' },
+      { cmd: 'xargs cmd', desc: 'Build command from stdin input' },
+      { cmd: 'seq 1 10', desc: 'Generate sequence of numbers' },
+      { cmd: 'echo $?', desc: 'Check exit code of last command' },
+      { cmd: 'export VAR=value', desc: 'Set environment variable' },
+      { cmd: '$(cmd)', desc: 'Command substitution' },
+      { cmd: 'crontab -e', desc: 'Edit user cron jobs' },
+      { cmd: '0 * * * * cmd', desc: 'Cron: run cmd every hour' },
+      { cmd: 'alias ll="ls -la"', desc: 'Create a command alias' },
+      { cmd: 'source ~/.bashrc', desc: 'Reload shell config without restart' },
+      { cmd: 'time cmd', desc: 'Time how long a command takes' },
+    ]
+  },
+  {
+    id: 'misc',
+    label: 'Misc & Utilities',
+    icon: '🛠️',
+    iconClass: 'icon-misc',
+    cmds: [
+      { cmd: 'man cmd', desc: 'Open manual page for command' },
+      { cmd: 'cmd --help', desc: 'Show help for command' },
+      { cmd: 'tldr cmd', desc: 'Simplified command examples (install tldr)' },
+      { cmd: 'history | grep cmd', desc: 'Search command history' },
+      { cmd: 'Ctrl+R', desc: 'Reverse search command history (interactive)' },
+      { cmd: 'Ctrl+C', desc: 'Kill current process' },
+      { cmd: 'Ctrl+Z', desc: 'Suspend current process' },
+      { cmd: 'Ctrl+D', desc: 'Exit shell / send EOF' },
+      { cmd: 'Ctrl+L', desc: 'Clear terminal screen' },
+      { cmd: 'clear', desc: 'Clear screen' },
+      { cmd: 'reset', desc: 'Reset terminal to clean state' },
+      { cmd: 'echo "text"', desc: 'Print text to stdout' },
+      { cmd: 'printf "fmt" args', desc: 'Formatted print to stdout' },
+      { cmd: 'read -p "prompt: " VAR', desc: 'Read user input into variable' },
+      { cmd: 'watch -n 2 cmd', desc: 'Run cmd every 2 seconds' },
+      { cmd: 'sleep 5', desc: 'Pause for 5 seconds' },
+      { cmd: 'yes | cmd', desc: 'Auto-confirm prompts' },
+      { cmd: 'tee file', desc: 'Write stdin to both stdout and file' },
+      { cmd: 'column -t -s, file.csv', desc: 'Format CSV as aligned columns' },
+      { cmd: 'bc', desc: 'Interactive calculator' },
+      { cmd: 'python3 -c "print(2**10)"', desc: 'Quick Python one-liner calc' },
+      { cmd: 'curl wttr.in', desc: 'Show weather in terminal' },
+      { cmd: 'cal -3', desc: 'Show 3 months of calendar' },
+      { cmd: 'factor 42', desc: 'Show prime factors of a number' },
+      { cmd: 'toilet -f big text', desc: 'ASCII art text banner' },
+      { cmd: 'cowsay "hello"', desc: 'Cow says message in ASCII art' },
+      { cmd: 'fortune | cowsay', desc: 'Random quote with ASCII cow' },
+    ]
+  }
+];
+
+// Build UI
+const content = document.getElementById('content');
+const filters = document.getElementById('filters');
+const searchInput = document.getElementById('search');
+const resultCount = document.getElementById('result-count');
+const totalCount = document.getElementById('total-count');
+const toast = document.getElementById('toast');
+
+let totalCmds = 0;
+data.forEach(cat => totalCmds += cat.cmds.length);
+totalCount.textContent = totalCmds;
+
+// Build filter buttons
+data.forEach(cat => {
+  const btn = document.createElement('button');
+  btn.className = 'filter-btn';
+  btn.dataset.cat = cat.id;
+  btn.textContent = cat.label;
+  filters.appendChild(btn);
+});
+
+// Build sections
+data.forEach(cat => {
+  const section = document.createElement('div');
+  section.className = `section cat-${cat.id}`;
+  section.dataset.cat = cat.id;
+
+  section.innerHTML = `
+    <div class="section-header">
+      <div class="section-icon ${cat.iconClass}">${cat.icon}</div>
+      <span class="section-title">${cat.label}</span>
+      <span class="section-count">${cat.cmds.length}</span>
+    </div>
+    <div class="cmd-grid">
+      ${cat.cmds.map(c => `
+        <div class="cmd-card" data-cat="${cat.id}" data-cmd="${escHtml(c.cmd)}" data-desc="${escHtml(c.desc)}">
+          <div class="cmd-top">
+            <code class="cmd-code">${escHtml(c.cmd)}</code>
+            <button class="copy-btn" onclick="copyCmd(this, '${escAttr(c.cmd)}')">copy</button>
+          </div>
+          <div class="cmd-desc">${escHtml(c.desc)}</div>
+          <span class="cmd-tag tag-${cat.id}">${cat.label}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  content.appendChild(section);
+});
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function escAttr(s) {
+  return s.replace(/'/g,"\\'").replace(/"/g,'&quot;');
+}
+
+// Copy
+function copyCmd(btn, cmd) {
+  navigator.clipboard.writeText(cmd).then(() => {
+    btn.textContent = '✓';
+    btn.classList.add('copied');
+    showToast('Copied!');
+    setTimeout(() => { btn.textContent = 'copy'; btn.classList.remove('copied'); }, 1500);
+  });
+}
+
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 1800);
+}
+
+// Filter
+let activeFilter = 'all';
+
+document.getElementById('filters').addEventListener('click', e => {
+  if (!e.target.classList.contains('filter-btn')) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
+  activeFilter = e.target.dataset.cat;
+  applyFilter();
+});
+
+function applyFilter() {
+  const query = searchInput.value.toLowerCase().trim();
+
+  const sections = document.querySelectorAll('.section');
+  let visible = 0;
+
+  sections.forEach(sec => {
+    const catMatch = activeFilter === 'all' || sec.dataset.cat === activeFilter;
+    if (!catMatch) { sec.classList.add('hidden'); return; }
+
+    const cards = sec.querySelectorAll('.cmd-card');
+    let secVisible = 0;
+
+    cards.forEach(card => {
+      const cmdMatch = !query || card.dataset.cmd.toLowerCase().includes(query) || card.dataset.desc.toLowerCase().includes(query);
+      if (cmdMatch) { card.classList.remove('hidden'); secVisible++; visible++; }
+      else card.classList.add('hidden');
+    });
+
+    sec.classList.toggle('hidden', secVisible === 0);
+  });
+
+  if (query) {
+    resultCount.textContent = `${visible} command${visible !== 1 ? 's' : ''} found for "${query}"`;
+  } else {
+    resultCount.textContent = '';
+  }
+}
+
+searchInput.addEventListener('input', applyFilter);
+</script>
+</body>
+</html>
