@@ -11,36 +11,42 @@
             "id": "14898d201981ba43",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "cc29b9a2561087bb",
+            "type": "leaf",
+            "state": {
               "type": "pdf",
               "state": {
-                "file": "Books/CEH-Guide/CEH  Exam Guide, Fourth Edition by Matt Walker.pdf",
-                "page": 1,
-                "left": -8,
-                "top": 796,
-                "zoom": 1.9901960784313726
+                "file": "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
+                "page": 15,
+                "left": -21,
+                "top": 806,
+                "zoom": 0.7301641245027287
               },
               "icon": "lucide-file-text",
-              "title": "CEH  Exam Guide, Fourth Edition by Matt Walker"
+              "title": "CEHv13 - Module 04 - Enumeration hide01.ir"
             }
           },
           {
             "id": "f6f1e8937d519107",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "2037a390227b6073",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "pdf",
+              "state": {
+                "file": "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
+                "page": 1,
+                "left": -8,
+                "top": 846,
+                "zoom": 2.043898578463504
+              },
+              "icon": "lucide-file-text",
+              "title": "CEH_v13__Module_05_Vulnerability_Analysis"
             }
           }
         ],
@@ -56,7 +62,6 @@
       {
         "id": "8bc9aa10768b7c08",
         "type": "tabs",
-        "dimension": 79.7979797979798,
         "children": [
           {
             "id": "f5fd95ced0daabf5",
@@ -96,23 +101,6 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
-            }
-          }
-        ]
-      },
-      {
-        "id": "21739ad4baa34610",
-        "type": "tabs",
-        "dimension": 20.2020202020202,
-        "children": [
-          {
-            "id": "c08dff7b6dd87339",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -239,29 +227,29 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "2037a390227b6073",
+  "active": "f6f1e8937d519107",
   "lastOpenFiles": [
-    "Books/CEH-Guide/CEH  Exam Guide, Fourth Edition by Matt Walker.pdf",
-    "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
-    "Books/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
-    "Books/CEH-Guide",
-    "Books",
-    "HTB/Cheatsheets/Abusing_Http_Misconfigurations_Module_Cheat_Sheet.pdf",
-    "CEH--Quick/CEH_v13__Module_03_Scanning_Networks.pdf",
+    "HTB/Network Services -2.md",
+    "CEH--Quick 🦈/CEH_v13__Module_04_Enumeration.pdf",
+    "CEH--Quick 🦈/CEH_v13__Module_03_Scanning_Networks.pdf",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
+    "CEH--Quick 🦈/Unconfirmed 268048.crdownload",
+    "Useful-Links.md",
+    "Books 📚/CEH-Guide/CEH  Exam Guide, Fourth Edition by Matt Walker.pdf",
+    "CEH--Deep 🔍/CEH v13 PDF /hide01.ir",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 20 - Cryptography hide01.ir.pdf",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 19 - Cloud Computing hide01.ir.pdf",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 18 - IoT and OT Hacking hide01.ir.pdf",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 17 - Hacking Mobile Platforms hide01.ir.pdf",
     "Notes/DNS Zone Transfers.md",
     "ADCD/Wireless Hacking.md",
-    "Files attached/Wireless Hacking.pdf",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
-    "Footprinting/Footprinting Tools — Complete Reference.md",
-    "CEH--Deep/CEH-V13-Free-Resources.md",
-    "CEH--Quick/CEH_v13__Module_02_Footprinting_and_Reconnaissance.pdf",
-    "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 02 - Footprinting and Reconnaissance hide01.ir.pdf",
-    "Footprinting/Banner Grabbing.md",
-    "Footprinting/OSINT Methodology.md",
-    "Footprinting/Network Scanning.md",
-    "Untitled.md",
-    "CEH--Deep/CEH v13 PDF hide01.ir/CEHv13 - Module 03 - Scanning Networks hide01.ir.pdf",
+    "Footprinting 👣/Footprinting Tools — Complete Reference.md",
+    "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
+    "Footprinting 👣/Banner Grabbing.md",
+    "Footprinting 👣/OSINT Methodology.md",
+    "Footprinting 👣/Network Scanning.md",
     "TOOLS/Web.md",
     "CEH-V13-Free-Resources.md",
     "TOOLS/Network.md",
@@ -275,10 +263,9 @@
     "In-depth notes/AD/SMB Enumeration.md",
     "REVERSE-ENGINEERING/Reverse Engineering.md",
     "ADCD/Nmap syntaxes.md",
-    "Footprinting/DNS Enumeration.md",
-    "Footprinting/Subdomain Takeover.md",
-    "Footprinting/JavaScript Recon.md",
-    "Footprinting/Cloud Misconfigurations.md",
+    "Footprinting 👣/DNS Enumeration.md",
+    "Footprinting 👣/Subdomain Takeover.md",
+    "Footprinting 👣/JavaScript Recon.md",
     "Untitled.canvas"
   ]
 }
