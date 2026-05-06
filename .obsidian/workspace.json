@@ -23,32 +23,28 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
-                "page": 1,
-                "zoom": 1
+                "file": "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 05 - Vulnerability Analysis hide01.ir.pdf",
+                "page": 5,
+                "left": -12,
+                "top": 829,
+                "zoom": 1.2174399776102993
               },
               "icon": "lucide-file-text",
-              "title": "CEHv13 - Module 04 - Enumeration hide01.ir"
+              "title": "CEHv13 - Module 05 - Vulnerability Analysis hide01.ir"
             }
           },
           {
             "id": "f6f1e8937d519107",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.pdf",
-                "page": 9,
-                "left": -10,
-                "top": 804,
-                "zoom": 1.503703703703704
-              },
-              "icon": "lucide-file-text",
-              "title": "Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -201,14 +197,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "03f1ac8495195bd8",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,22 +230,36 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "cc29b9a2561087bb",
+  "active": "03f1ac8495195bd8",
   "lastOpenFiles": [
+    "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "copilot/copilot-custom-prompts/Explain like I am 5.md",
+    "copilot/copilot-custom-prompts/Simplify.md",
+    "copilot/copilot-custom-prompts/Summarize.md",
+    "copilot/copilot-custom-prompts/Translate to Chinese.md",
+    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 05 - Vulnerability Analysis hide01.ir.pdf",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Bloodhound_Module_Cheat_Sheet.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.md",
-    "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
     "HTB/Network Services -2.md",
     "CEH--Quick 🦈/CEH_v13__Module_04_Enumeration.pdf",
     "CEH--Quick 🦈/CEH_v13__Module_03_Scanning_Networks.pdf",
-    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
     "CEH--Quick 🦈/Unconfirmed 268048.crdownload",
     "Useful-Links.md",
-    "Books 📚/CEH-Guide/CEH  Exam Guide, Fourth Edition by Matt Walker.pdf",
-    "CEH--Deep 🔍/CEH v13 PDF /hide01.ir",
-    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 20 - Cryptography hide01.ir.pdf",
-    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 19 - Cloud Computing hide01.ir.pdf",
     "Notes/DNS Zone Transfers.md",
     "ADCD/Wireless Hacking.md",
     "Files attached/Pasted image 20260319210053.png",
@@ -250,21 +269,6 @@
     "Footprinting 👣/Banner Grabbing.md",
     "Footprinting 👣/OSINT Methodology.md",
     "Footprinting 👣/Network Scanning.md",
-    "TOOLS/Web.md",
-    "CEH-V13-Free-Resources.md",
-    "TOOLS/Network.md",
-    "CEH_s18__Module_02_Footprinting_and_Reconnaissance.pdf.md",
-    "TOOLS/OSINT Tools.md",
-    "Daily-ADCD/2026-03-09.md",
-    "TOOLS/OSINT/Untitled.md",
-    "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
-    "In-depth notes/OWASP/Authentication Failures.md",
-    "Notes/OSI Model.md",
-    "In-depth notes/AD/SMB Enumeration.md",
-    "REVERSE-ENGINEERING/Reverse Engineering.md",
-    "ADCD/Nmap syntaxes.md",
-    "Footprinting 👣/DNS Enumeration.md",
-    "Footprinting 👣/Subdomain Takeover.md",
     "Untitled.canvas"
   ]
 }
