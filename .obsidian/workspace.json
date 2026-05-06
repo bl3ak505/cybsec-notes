@@ -24,10 +24,10 @@
               "type": "pdf",
               "state": {
                 "file": "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 05 - Vulnerability Analysis hide01.ir.pdf",
-                "page": 5,
-                "left": -12,
-                "top": 829,
-                "zoom": 1.2174399776102993
+                "page": 1,
+                "left": -21,
+                "top": 1298,
+                "zoom": 0.7301641245027287
               },
               "icon": "lucide-file-text",
               "title": "CEHv13 - Module 05 - Vulnerability Analysis hide01.ir"
@@ -37,10 +37,16 @@
             "id": "f6f1e8937d519107",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "pdf",
+              "state": {
+                "file": "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
+                "page": 5,
+                "left": -13,
+                "top": 229,
+                "zoom": 1.2258357237829145
+              },
+              "icon": "lucide-file-text",
+              "title": "CEH_v13__Module_05_Vulnerability_Analysis"
             }
           }
         ],
@@ -197,23 +203,14 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "03f1ac8495195bd8",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "smart-connections-view"
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,9 +227,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "03f1ac8495195bd8",
+  "active": "f6f1e8937d519107",
   "lastOpenFiles": [
+    "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
     "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 05 - Vulnerability Analysis hide01.ir.pdf",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
@@ -250,7 +249,6 @@
     "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
     "copilot/copilot-custom-prompts",
     "copilot",
-    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 05 - Vulnerability Analysis hide01.ir.pdf",
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Bloodhound_Module_Cheat_Sheet.pdf",
@@ -265,7 +263,6 @@
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
     "Footprinting 👣/Footprinting Tools — Complete Reference.md",
-    "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
     "Footprinting 👣/Banner Grabbing.md",
     "Footprinting 👣/OSINT Methodology.md",
     "Footprinting 👣/Network Scanning.md",
