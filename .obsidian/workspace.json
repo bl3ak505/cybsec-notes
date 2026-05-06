@@ -24,10 +24,8 @@
               "type": "pdf",
               "state": {
                 "file": "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
-                "page": 15,
-                "left": -21,
-                "top": 806,
-                "zoom": 0.7301641245027287
+                "page": 1,
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "CEHv13 - Module 04 - Enumeration hide01.ir"
@@ -39,16 +37,18 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
-                "page": 1,
-                "zoom": 1
+                "file": "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.pdf",
+                "page": 9,
+                "left": -10,
+                "top": 804,
+                "zoom": 1.503703703703704
               },
               "icon": "lucide-file-text",
-              "title": "CEH_v13__Module_05_Vulnerability_Analysis"
+              "title": "Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,8 +225,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f6f1e8937d519107",
+  "active": "cc29b9a2561087bb",
   "lastOpenFiles": [
+    "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.pdf",
+    "cheatsheets/Cheatsheets-htb/Active_Directory_Bloodhound_Module_Cheat_Sheet.pdf",
+    "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.md",
+    "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
     "HTB/Network Services -2.md",
     "CEH--Quick 🦈/CEH_v13__Module_04_Enumeration.pdf",
     "CEH--Quick 🦈/CEH_v13__Module_03_Scanning_Networks.pdf",
@@ -237,8 +241,6 @@
     "CEH--Deep 🔍/CEH v13 PDF /hide01.ir",
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 20 - Cryptography hide01.ir.pdf",
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 19 - Cloud Computing hide01.ir.pdf",
-    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 18 - IoT and OT Hacking hide01.ir.pdf",
-    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 17 - Hacking Mobile Platforms hide01.ir.pdf",
     "Notes/DNS Zone Transfers.md",
     "ADCD/Wireless Hacking.md",
     "Files attached/Pasted image 20260319210053.png",
@@ -263,7 +265,6 @@
     "ADCD/Nmap syntaxes.md",
     "Footprinting 👣/DNS Enumeration.md",
     "Footprinting 👣/Subdomain Takeover.md",
-    "Footprinting 👣/JavaScript Recon.md",
     "Untitled.canvas"
   ]
 }
