@@ -37,12 +37,14 @@
             "id": "f6f1e8937d519107",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf"
+                "file": "Misc/linkedin profile.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CEH_v13__Module_05_Vulnerability_Analysis"
+              "icon": "lucide-file",
+              "title": "linkedin profile"
             }
           }
         ],
@@ -225,8 +227,9 @@
   },
   "active": "f6f1e8937d519107",
   "lastOpenFiles": [
-    "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
     "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
+    "Misc/linkedin profile.md",
+    "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 05 - Vulnerability Analysis hide01.ir.pdf",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
@@ -261,7 +264,6 @@
     "Footprinting 👣/Footprinting Tools — Complete Reference.md",
     "Footprinting 👣/Banner Grabbing.md",
     "Footprinting 👣/OSINT Methodology.md",
-    "Footprinting 👣/Network Scanning.md",
     "Untitled.canvas"
   ]
 }
