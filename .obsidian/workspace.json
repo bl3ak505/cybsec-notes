@@ -24,9 +24,9 @@
               "type": "pdf",
               "state": {
                 "file": "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 06 - System Hacking hide01.ir.pdf",
-                "page": 9,
+                "page": 13,
                 "left": -12,
-                "top": 624,
+                "top": 1229,
                 "zoom": 1.2174399776102993
               },
               "icon": "lucide-file-text",
@@ -62,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -239,15 +239,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "06f2935850594001",
+  "active": "cc29b9a2561087bb",
   "lastOpenFiles": [
-    "Footprinting 👣/Network Scanning.md",
-    "Daily-ADCD/2026-05-13.md",
     "TOOLS/Windows.md",
+    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 06 - System Hacking hide01.ir.pdf",
+    "Daily-ADCD/2026-05-13.md",
+    "Footprinting 👣/Network Scanning.md",
     "TOOLS/OSINT Tools.md",
     "TOOLS/Network.md",
     "Useful-Links.md",
-    "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 06 - System Hacking hide01.ir.pdf",
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 05 - Vulnerability Analysis hide01.ir.pdf",
     "TOOLS/WIN/Untitled.md",
     "TOOLS/WIN",
@@ -275,7 +275,6 @@
     "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Bloodhound_Module_Cheat_Sheet.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.md",
-    "HTB/Network Services -2.md",
     "CEH--Quick 🦈/CEH_v13__Module_04_Enumeration.pdf",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
