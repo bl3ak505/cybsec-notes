@@ -21,14 +21,14 @@
             "id": "cc29b9a2561087bb",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 06 - System Hacking hide01.ir.pdf",
-                "page": 1,
-                "zoom": 1
+                "file": "Prompts/JVP.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CEHv13 - Module 06 - System Hacking hide01.ir"
+              "icon": "lucide-file",
+              "title": "JVP"
             }
           },
           {
@@ -239,8 +239,9 @@
   },
   "active": "cc29b9a2561087bb",
   "lastOpenFiles": [
-    "TOOLS/Windows.md",
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 06 - System Hacking hide01.ir.pdf",
+    "Prompts/JVP.md",
+    "TOOLS/Windows.md",
     "Daily-ADCD/2026-05-13.md",
     "Footprinting 👣/Network Scanning.md",
     "TOOLS/OSINT Tools.md",
@@ -272,7 +273,6 @@
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Bloodhound_Module_Cheat_Sheet.pdf",
-    "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.md",
     "CEH--Quick 🦈/CEH_v13__Module_04_Enumeration.pdf",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
