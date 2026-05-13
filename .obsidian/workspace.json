@@ -37,14 +37,14 @@
             "id": "f6f1e8937d519107",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Misc/linkedin profile.md",
-                "mode": "source",
-                "source": false
+                "file": "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 06 - System Hacking hide01.ir.pdf",
+                "page": 1,
+                "zoom": 1
               },
-              "icon": "lucide-file",
-              "title": "linkedin profile"
+              "icon": "lucide-file-text",
+              "title": "CEHv13 - Module 06 - System Hacking hide01.ir"
             }
           }
         ],
@@ -227,8 +227,8 @@
   },
   "active": "f6f1e8937d519107",
   "lastOpenFiles": [
-    "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
     "Misc/linkedin profile.md",
+    "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
     "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 05 - Vulnerability Analysis hide01.ir.pdf",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
