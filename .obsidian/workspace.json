@@ -37,14 +37,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "cheatsheets/Cheatsheets-htb/Abusing_Http_Misconfigurations_Module_Cheat_Sheet.pdf",
+                "file": "CEH--Deep 🔍/CEH_Exam_Set_2_1747494364.pdf",
                 "page": 1,
-                "left": -73,
-                "top": 813,
-                "zoom": 0.2759259259259259
+                "left": -8,
+                "top": 846,
+                "zoom": 1.7939931465430357
               },
               "icon": "lucide-file-text",
-              "title": "Abusing_Http_Misconfigurations_Module_Cheat_Sheet"
+              "title": "CEH_Exam_Set_2_1747494364"
             }
           },
           {
@@ -82,7 +82,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTime",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -217,7 +217,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -240,6 +240,9 @@
   },
   "active": "f6f1e8937d519107",
   "lastOpenFiles": [
+    "CEH--Deep 🔍/CEH_V13_Exam_Set_3_1747494374.pdf",
+    "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
+    "cheatsheets/Cheatsheets-htb/Abusing_Http_Misconfigurations_Module_Cheat_Sheet.pdf",
     "Footprinting 👣/Network Scanning.md",
     "Prompts/Security Prompts — Bug Bounty & CTF.md",
     "TOOLS/Windows.md",
@@ -255,7 +258,6 @@
     "TOOLS/WIN",
     "Misc/linkedin profile.md",
     "CEH--Quick 🦈/CEH_v13__Module_05_Vulnerability_Analysis.pdf",
-    "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
@@ -269,13 +271,11 @@
     "copilot/copilot-custom-prompts/Explain like I am 5.md",
     "copilot/copilot-custom-prompts/Simplify.md",
     "copilot/copilot-custom-prompts/Summarize.md",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
     "copilot/copilot-custom-prompts",
     "copilot",
     "CEH--Deep 🔍/CEH v13 PDF /CEHv13 - Module 04 - Enumeration hide01.ir.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Enumeration_Attacks_Module_Cheat_Sheet.pdf",
     "cheatsheets/Cheatsheets-htb/Active_Directory_Bloodhound_Module_Cheat_Sheet.pdf",
-    "CEH--Quick 🦈/CEH_v13__Module_04_Enumeration.pdf",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
     "Untitled.canvas"
