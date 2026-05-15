@@ -11,24 +11,16 @@
             "id": "14898d201981ba43",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "cc29b9a2561087bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Prompts/JVP.md",
-                "mode": "preview",
-                "source": false
+                "file": "CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
+                "page": 1,
+                "left": -8,
+                "top": 845,
+                "zoom": 2.043898578463504
               },
-              "icon": "lucide-file",
-              "title": "JVP"
+              "icon": "lucide-file-text",
+              "title": "CEH_v13__Module_01_Introduction_to_Ethical_Hacking"
             }
           },
           {
@@ -37,30 +29,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /3.Fileless & AI-based Malware.md",
+                "file": "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/01.IoT Hacking/README.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.Fileless & AI-based Malware"
+              "title": "README"
             }
           },
           {
-            "id": "06f2935850594001",
+            "id": "5dda4fb157ad9201",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily-ADCD/2026-05-13.md",
-                "mode": "source",
+                "file": "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /2.Virus and Worm Concepts.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-13"
+              "title": "2.Virus and Worm Concepts"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -236,20 +228,36 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f5fd95ced0daabf5",
+  "active": "f6f1e8937d519107",
   "lastOpenFiles": [
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /5.Malware Countermeasures.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /4.Malware Analysis.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 05: Vulnerability Analysis/README.md",
+    "Daily-ADCD/2026-05-15.md",
+    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/01.IoT Hacking/README.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /README.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 02: Footprinting and Reconnaissance /README.md",
-    "CEH--Deep 🔍/CEH_Exam_Set_2_1747494364.pdf",
+    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /4.Malware Analysis.md",
+    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /2.Virus and Worm Concepts.md",
+    "Notes/Malware-Analysis/analyzing-malicious-document-files.pdf",
+    "Notes/Malware-Analysis/Malware Threat Module 7 Report.pdf",
+    "Notes/Malware-Analysis",
+    "Notes/Unconfirmed 260266.crdownload",
+    "Notes/Unconfirmed 280218.crdownload",
+    "CEH--Quick 🦈/CEH_v13__Module_07_Malware_Threats.pdf",
+    "CEH--Quick 🦈/Unconfirmed 514590.crdownload",
+    "CEH--Quick 🦈/CEH_v13__Module_06_System_Hacking.pdf",
+    "Unconfirmed 931786.crdownload",
+    "CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
+    "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/README.md",
+    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /5.Malware Countermeasures.md",
+    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/02.OT Hacking/03.OT Attack Countermeasures.md",
+    "Daily-ADCD/2026-05-13.md",
+    "Prompts/JVP.md",
+    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 07: Malware Threats /3.Fileless & AI-based Malware.md",
+    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 05: Vulnerability Analysis/README.md",
+    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 02: Footprinting and Reconnaissance /README.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 20: Cryptography /README.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 20: Cryptography /03.Cryptography Attack Countermeasures.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 20: Cryptography /02.Cryptanalysis.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 20: Cryptography /01.Applications of Cryptography.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 20: Cryptography ",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/README.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/10.Cloud Security.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/09.Container Hacking.md",
@@ -258,22 +266,6 @@
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/06.AWS Hacking.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/05.Cloud Hacking.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/04. Cloud Attacks.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/03.Cloud Computing Threats.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/02.Serverless Computing.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing/01.Container Technology.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 19: Cloud Computing",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/02.OT Hacking/01.OT Hacking Methodology/README.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/02.OT Hacking/01.OT Hacking Methodology/04.Gain and Maintain Remote Access.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/02.OT Hacking/01.OT Hacking Methodology/03.Launch Attacks.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/02.OT Hacking/01.OT Hacking Methodology/02.Vulnerability Scanning.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/02.OT Hacking/01.OT Hacking Methodology/01.Information Gathering.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/02.OT Hacking/01.OT Hacking Methodology",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/01.IoT Hacking/01.IoT Hacking Methodology ",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/02.OT Hacking",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking/01.IoT Hacking",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 18: IoT and OT Hacking",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 17: Hacking Mobile Platforms/04.Mobile Security Guidelines and Tools",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 17: Hacking Mobile Platforms/01.Hacking Android OS",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
     "Untitled.canvas"
