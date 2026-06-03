@@ -5,6 +5,20 @@
 - 7-layer reference model that defines how data travels from one device to another across a network. Each layer has one job and does it well.
 
 ---
+## Quick Cheat Sheet 🧠
+
+|Layer|Name|Device|PDU|Attack Example|
+|---|---|---|---|---|
+|7|Application|Proxy, Firewall|Data|SQLi, XSS, RCE|
+|6|Presentation|—|Data|SSL stripping|
+|5|Session|—|Data|Session hijacking|
+|4|Transport|Firewall|Segment|SYN flood, port scan|
+|3|Network|Router|Packet|IP spoofing, ICMP tunnel|
+|2|Data Link|Switch|Frame|ARP poison, MAC flood|
+|1|Physical|Hub, NIC|Bits|Sniffing, jamming|
+
+
+---
 
 ## Layer 7 — Application Layer
 
@@ -295,14 +309,3 @@ Receiving side strips each header going back up 🔼
 
 ---
 
-## Quick Cheat Sheet 🧠
-
-|Layer|Name|Device|PDU|Attack Example|
-|---|---|---|---|---|
-|7|Application|Proxy, Firewall|Data|SQLi, XSS, RCE|
-|6|Presentation|—|Data|SSL stripping|
-|5|Session|—|Data|Session hijacking|
-|4|Transport|Firewall|Segment|SYN flood, port scan|
-|3|Network|Router|Packet|IP spoofing, ICMP tunnel|
-|2|Data Link|Switch|Frame|ARP poison, MAC flood|
-|1|Physical|Hub, NIC|Bits|Sniffing, jamming|
