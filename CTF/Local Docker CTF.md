@@ -157,3 +157,4 @@ Alpine Image Transfer → Host Mount → Root Flag
 - Writable `/run/docker.sock` = root, always check it
 - No internet on target? Transfer images via SCP from attack box
 - `docker run -v /:/host` mounts entire host filesystem as root
+🧑‍💻 https://tryhackme.com/p/4thul.exe

