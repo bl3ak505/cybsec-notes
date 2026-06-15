@@ -57,12 +57,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RedTeaming-Tactics-and-Techniques-master/offensive-security/defense-evasion/detecting-hooked-syscall-functions.md",
+                "file": "RedTeaming-Tactics-and-Techniques-master/offensive-security/code-injection-process-injection/how-to-hook-windows-api-using-c++.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "detecting-hooked-syscall-functions"
+              "title": "how-to-hook-windows-api-using-c++"
             }
           },
           {
@@ -197,7 +197,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/Web cache deception.md",
+                "file": "RedTeaming-Tactics-and-Techniques-master/offensive-security/code-injection-process-injection/how-to-hook-windows-api-using-c++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Web cache deception"
+              "title": "Backlinks for how-to-hook-windows-api-using-c++"
             }
           },
           {
@@ -302,6 +302,7 @@
   },
   "active": "465396195bb5870b",
   "lastOpenFiles": [
+    "RedTeaming-Tactics-and-Techniques-master/offensive-security/defense-evasion/detecting-hooked-syscall-functions.md",
     "RedTeaming-Tactics-and-Techniques-master/miscellaneous-reversing-forensics/windows-kernel-internals/compiling-first-kernel-driver-kdprint-dbgprint-and-debugview.md",
     "RedTeaming-Tactics-and-Techniques-master/lab/experiments/dde/dde/word/theme/theme1.xml",
     "RedTeaming-Tactics-and-Techniques-master/lab/experiments/dde/dde/word/_rels/document.xml.rels",
@@ -338,7 +339,6 @@
     "Notes/OSI Model.md",
     "Notes/GRC.md",
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 11: Session Hijacking /1.Application-Level Session Hijacking.md",
-    "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 11: Session Hijacking /README.md",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
     "Files attached/Pasted image 20260518120210.png",
