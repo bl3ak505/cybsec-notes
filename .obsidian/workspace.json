@@ -85,16 +85,14 @@
             "id": "a68a6c5f52026591",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CEH--Quick 🦈/CEH_v13__Module_13_Haking_Web_Servers.pdf",
-                "page": 39,
-                "left": -8,
-                "top": 735,
-                "zoom": 2.043898578463504
+                "file": "CTF/Local Docker CTF.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CEH_v13__Module_13_Haking_Web_Servers"
+              "icon": "lucide-file",
+              "title": "Local Docker CTF"
             }
           },
           {
@@ -291,9 +289,9 @@
   },
   "active": "a68a6c5f52026591",
   "lastOpenFiles": [
+    "CEH--Quick 🦈/CEH_v13__Module_13_Haking_Web_Servers.pdf",
     "RedTeaming-Tactics-and-Techniques-master/offensive-security/t1055-process-injection/loading-and-executing-shellcode-from-portable-executable-resouces.md",
     "RedTeaming-Tactics-and-Techniques-master/offensive-security/wip.md",
-    "CEH--Quick 🦈/CEH_v13__Module_13_Haking_Web_Servers.pdf",
     "Linux/Linux file permissions.md",
     "Notes/GRC.md",
     "Books 📚/Linux-commands-cheat-sheet-2023-Red-Hat-Developer.pdf",
@@ -327,7 +325,6 @@
     "CEH--Deep 🔍/Certified_Ethical_Hacker_v13-main/Module 14: Hacking Web Applications/1.Web Application Threats/2.Web Application Attacks.md",
     "CTF/Local Docker CTF.md",
     "In-depth notes/OWASP/Security Logging & Monitoring Failures.md",
-    "In-depth notes/AD/Shadow Credentials.md",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
     "Files attached/Pasted image 20260518120210.png",
