@@ -87,7 +87,11 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CEH--Quick 🦈/CEH_v13__Module_16_Hacking_Wireless_Networks.pdf"
+                "file": "CEH--Quick 🦈/CEH_v13__Module_16_Hacking_Wireless_Networks.pdf",
+                "page": 6,
+                "left": -13,
+                "top": 106,
+                "zoom": 1.2258357237829145
               },
               "icon": "lucide-file-text",
               "title": "CEH_v13__Module_16_Hacking_Wireless_Networks"
