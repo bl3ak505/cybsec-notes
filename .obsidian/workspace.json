@@ -25,14 +25,16 @@
             "id": "d9f85ba48f497cbc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Notes/OSI Model.md",
-                "mode": "preview",
-                "source": false
+                "file": "CEH--Quick 🦈/Cloud Computing.pdf",
+                "page": 1,
+                "left": -12,
+                "top": 846,
+                "zoom": 1.2270711550090707
               },
-              "icon": "lucide-file",
-              "title": "OSI Model"
+              "icon": "lucide-file-text",
+              "title": "Cloud Computing"
             }
           },
           {
@@ -289,6 +291,7 @@
   },
   "active": "d9f85ba48f497cbc",
   "lastOpenFiles": [
+    "Notes/OSI Model.md",
     "Notes/port numbers.md",
     "REVERSE-ENGINEERING/Reverse Engineering.md",
     "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
@@ -313,7 +316,6 @@
     "Portswigger/Web cache deception.md",
     "Footprinting 👣/Banner Grabbing.md",
     "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
-    "Notes/OSI Model.md",
     "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
     "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
     "RedTeaming-Tactics-and-Techniques-master/miscellaneous-reversing-forensics/aes-encryption-example-using-cryptopp-.lib-in-visual-studio-c++.md",
