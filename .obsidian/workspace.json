@@ -29,12 +29,24 @@
               "state": {
                 "file": "CEH--Quick 🦈/Cloud Computing.pdf",
                 "page": 1,
-                "left": -12,
-                "top": 846,
-                "zoom": 1.2270711550090707
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "Cloud Computing"
+            }
+          },
+          {
+            "id": "61e6225f8f5af764",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CEH--Quick 🦈/Module 14-15.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Module 14-15"
             }
           },
           {
@@ -45,7 +57,7 @@
               "state": {
                 "file": "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
                 "page": 1,
-                "left": -212,
+                "left": -298,
                 "top": 599,
                 "zoom": 0.8675359840387632
               },
@@ -112,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -289,13 +301,20 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d9f85ba48f497cbc",
+  "active": "61e6225f8f5af764",
   "lastOpenFiles": [
+    "CEH--Quick 🦈/CEH_v13__Module_16_Hacking_Wireless_Networks.pdf",
+    "CEH--Quick 🦈/Module 14-15.md",
+    "CEH--Quick 🦈/Unconfirmed 768270.crdownload",
+    "CEH--Quick 🦈/Cloud Computing.pdf",
+    "CEH--Quick 🦈/CEH v13 — Module 17.md",
+    "CEH--Quick 🦈/CEH_v13__Module_17_Hacking_Mobile_Platforms.pdf",
+    "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
+    "Untitled 1.md",
     "Notes/OSI Model.md",
     "Notes/port numbers.md",
     "REVERSE-ENGINEERING/Reverse Engineering.md",
     "REVERSE-ENGINEERING/Executable File Formats You Must Know (Beginner Notes).md",
-    "CEH--Quick 🦈/CEH_v13__Module_16_Hacking_Wireless_Networks.pdf",
     "CEH--Quick 🦈/Module 14-15.pdf",
     "CTF/THM/Boiler CTF.md",
     "CTF/THM/HA Joker CTF.md",
@@ -306,7 +325,6 @@
     "Linux/Linux file permissions.md",
     "Notes/GRC.md",
     "Books 📚/Linux-commands-cheat-sheet-2023-Red-Hat-Developer.pdf",
-    "Untitled.md",
     "Linux",
     "Prompts/JVP.md",
     "Misc/CTIGA_Exam_Notes.md",
@@ -316,18 +334,11 @@
     "Portswigger/Web cache deception.md",
     "Footprinting 👣/Banner Grabbing.md",
     "CEH--Deep 🔍/CEH-V13-Free-Resources.md",
-    "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
     "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
     "RedTeaming-Tactics-and-Techniques-master/miscellaneous-reversing-forensics/aes-encryption-example-using-cryptopp-.lib-in-visual-studio-c++.md",
     "RedTeaming-Tactics-and-Techniques-master/offensive-security/code-injection-process-injection/how-to-hook-windows-api-using-c++.md",
     "RedTeaming-Tactics-and-Techniques-master/offensive-security/defense-evasion/detecting-hooked-syscall-functions.md",
-    "RedTeaming-Tactics-and-Techniques-master/miscellaneous-reversing-forensics/windows-kernel-internals/compiling-first-kernel-driver-kdprint-dbgprint-and-debugview.md",
-    "RedTeaming-Tactics-and-Techniques-master/lab/experiments/dde/dde/word/theme/theme1.xml",
-    "RedTeaming-Tactics-and-Techniques-master/lab/experiments/dde/dde/word/_rels/document.xml.rels",
-    "RedTeaming-Tactics-and-Techniques-master/lab/experiments/dde/dde/word/webSettings.xml",
     "RedTeaming-Tactics-and-Techniques-master/lab/experiments/macros/Doc3/word/media/image1.png",
-    "RedTeaming-Tactics-and-Techniques-master/miscellaneous-reversing-forensics/windows-kernel-internals/README.md",
-    "RedTeaming-Tactics-and-Techniques-master/miscellaneous-reversing-forensics/windows-kernel/README.md",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
     "Files attached/Pasted image 20260518120210.png",
