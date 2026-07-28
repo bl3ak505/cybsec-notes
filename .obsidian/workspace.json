@@ -45,10 +45,14 @@
             "id": "61e6225f8f5af764",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "README"
             }
           },
           {
@@ -58,10 +62,10 @@
               "type": "pdf",
               "state": {
                 "file": "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
-                "page": 6,
-                "left": -43,
-                "top": 795,
-                "zoom": 2
+                "page": 22,
+                "left": -7,
+                "top": 605,
+                "zoom": 2.235294117647059
               },
               "icon": "lucide-file-text",
               "title": "CEH_Study_Guide_-_Matt_Walker"
@@ -139,8 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "88f7a455f734c0ec",
