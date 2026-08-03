@@ -57,11 +57,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
-                "page": 27,
-                "left": -8,
-                "top": 568,
-                "zoom": 1.9901960784313726
+                "file": "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf"
               },
               "icon": "lucide-file-text",
               "title": "CEH_Study_Guide_-_Matt_Walker"
@@ -88,7 +84,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTime",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
