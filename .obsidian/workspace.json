@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CEH/CEH--Deep/Module 03: Scanning Networks /README.md",
+                "file": "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
                 "mode": "preview",
                 "source": false
               },
@@ -57,14 +57,18 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf"
+                "file": "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
+                "page": 31,
+                "left": -13,
+                "top": 2,
+                "zoom": 1.1936274509803921
               },
               "icon": "lucide-file-text",
               "title": "CEH_Study_Guide_-_Matt_Walker"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -243,11 +247,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "85aaa07919e70d4f",
+  "active": "a23f30f5496251e6",
   "lastOpenFiles": [
-    "Notes/OSI Model.md",
-    "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
     "CEH/CEH--Deep/Module 03: Scanning Networks /README.md",
+    "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
+    "Notes/OSI Model.md",
     "Linux/Linux file permissions.md",
     "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
     "Untitled.md",
