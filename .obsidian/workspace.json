@@ -66,9 +66,19 @@
               "icon": "lucide-file-text",
               "title": "CEH_Study_Guide_-_Matt_Walker"
             }
+          },
+          {
+            "id": "0937cc3226348387",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -247,8 +257,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "a23f30f5496251e6",
+  "active": "0937cc3226348387",
   "lastOpenFiles": [
+    "Notes/port numbers.md",
+    "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
     "CEH/CEH--Deep/Module 03: Scanning Networks /README.md",
     "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
     "Notes/OSI Model.md",
@@ -256,8 +268,6 @@
     "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
     "Untitled.md",
     "RedTeaming-Tactics-and-Techniques-master/SUMMARY.md",
-    "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
-    "Notes/port numbers.md",
     "CEH--Quick 🦈/CEH v13 — Module 17.md",
     "CEH--Quick 🦈/Module 14-15.pdf",
     "CEH--Quick 🦈/CEH_v13__Module_16_Hacking_Wireless_Networks.pdf",
