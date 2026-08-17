@@ -43,12 +43,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
+                "file": "CEH/ceh-v13-notes/01 - Intro.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "01 - Intro"
             }
           },
           {
@@ -259,6 +259,7 @@
   },
   "active": "a23f30f5496251e6",
   "lastOpenFiles": [
+    "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
     "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
     "CEH/ceh-v13-notes/Modules.md",
     "CEH/CEH-V13-Free-Resources.md",
@@ -266,7 +267,6 @@
     "CEH/CEHv13-notes-2/README.md",
     "CEH/ceh-v13-notes/03 - Scanning networks.md",
     "CEH/ceh-v13-notes/02 - footprinting and reconnaissance.md",
-    "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
     "CEH/CEHv13-notes-2/LICENSE",
     "CEH/CEHv13-notes-2",
     "CEH/ceh-v13-notes/README.md",
