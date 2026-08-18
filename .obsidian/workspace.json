@@ -77,9 +77,9 @@
               "state": {
                 "file": "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
                 "page": 1,
-                "left": -8,
-                "top": 325,
-                "zoom": 2.043898578463504
+                "left": -13,
+                "top": 103,
+                "zoom": 1.2258357237829145
               },
               "icon": "lucide-file-text",
               "title": "CEH_v13__Module_01_Introduction_to_Ethical_Hacking"
@@ -277,6 +277,8 @@
   },
   "active": "0937cc3226348387",
   "lastOpenFiles": [
+    "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
+    "CEH/CEH--official",
     "CEH/ceh-v13-notes/01 - Intro.md",
     "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
     "CEH/CEH--Quick 🦈/Module 14-15.pdf",
@@ -311,7 +313,6 @@
     "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
     "CEH--Quick 🦈/Module 14-15.pdf",
     "CEH--Quick 🦈/CEH_v13__Module_16_Hacking_Wireless_Networks.pdf",
-    "CEH--Quick 🦈/Cloud Computing.pdf",
     "RedTeaming-Tactics-and-Techniques-master/lab/experiments/macros/Doc3/word/media/image1.png",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
