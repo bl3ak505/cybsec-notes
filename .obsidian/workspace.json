@@ -76,10 +76,10 @@
               "type": "pdf",
               "state": {
                 "file": "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
-                "page": 1,
-                "left": -13,
-                "top": 103,
-                "zoom": 1.2258357237829145
+                "page": 2,
+                "left": -7,
+                "top": 811,
+                "zoom": 2.0438985784635046
               },
               "icon": "lucide-file-text",
               "title": "CEH_v13__Module_01_Introduction_to_Ethical_Hacking"
@@ -89,14 +89,20 @@
             "id": "1d83de2575f9537f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
+                "page": 1,
+                "left": -12,
+                "top": 1298,
+                "zoom": 1.2174399776102993
+              },
+              "icon": "lucide-file-text",
+              "title": "CEHv13 - Module 01 - Introduction to Ethical Hacking"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -275,12 +281,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "0937cc3226348387",
+  "active": "1d83de2575f9537f",
   "lastOpenFiles": [
+    "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
     "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
     "CEH/CEH--official",
     "CEH/ceh-v13-notes/01 - Intro.md",
-    "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
     "CEH/CEH--Quick 🦈/Module 14-15.pdf",
     "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
     "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
