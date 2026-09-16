@@ -89,14 +89,14 @@
             "id": "1d83de2575f9537f",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
-                "page": 1,
-                "zoom": 1
+                "file": "RedTeaming-Tactics-and-Techniques-master/SUMMARY.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CEHv13 - Module 01 - Introduction to Ethical Hacking"
+              "icon": "lucide-file",
+              "title": "SUMMARY"
             }
           }
         ],
@@ -261,8 +261,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -281,8 +280,9 @@
   },
   "active": "1d83de2575f9537f",
   "lastOpenFiles": [
-    "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
+    "RedTeaming-Tactics-and-Techniques-master/SUMMARY.md",
     "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
+    "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
     "CEH/CEH--official",
     "CEH/ceh-v13-notes/01 - Intro.md",
     "CEH/CEH--Quick 🦈/Module 14-15.pdf",
@@ -316,7 +316,6 @@
     "CEH/ceh-v13-notes",
     "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
     "CEH--Quick 🦈/Module 14-15.pdf",
-    "CEH--Quick 🦈/CEH_v13__Module_16_Hacking_Wireless_Networks.pdf",
     "RedTeaming-Tactics-and-Techniques-master/lab/experiments/macros/Doc3/word/media/image1.png",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
