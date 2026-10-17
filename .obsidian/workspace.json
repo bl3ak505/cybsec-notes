@@ -98,9 +98,19 @@
               "icon": "lucide-file",
               "title": "SUMMARY"
             }
+          },
+          {
+            "id": "bb5246995a059f22",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -278,7 +288,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1d83de2575f9537f",
+  "active": "bb5246995a059f22",
   "lastOpenFiles": [
     "RedTeaming-Tactics-and-Techniques-master/SUMMARY.md",
     "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
