@@ -103,10 +103,12 @@
             "id": "bb5246995a059f22",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "pdf",
+              "state": {
+                "file": "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "CEHv13 - Module 01 - Introduction to Ethical Hacking"
             }
           }
         ],
