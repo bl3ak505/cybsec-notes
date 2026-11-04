@@ -31,10 +31,10 @@
               "type": "pdf",
               "state": {
                 "file": "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
-                "page": 38,
-                "left": -84,
-                "top": 475,
-                "zoom": 1.6
+                "page": 67,
+                "left": -6,
+                "top": 534,
+                "zoom": 2
               },
               "pinned": true,
               "icon": "lucide-file-text",
@@ -56,65 +56,39 @@
             }
           },
           {
-            "id": "a23f30f5496251e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CEH/ceh-v13-notes/01 - Intro.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 - Intro"
-            }
-          },
-          {
-            "id": "0937cc3226348387",
+            "id": "bb5246995a059f22",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
                 "file": "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
                 "page": 2,
-                "left": -7,
-                "top": 811,
-                "zoom": 2.0438985784635046
+                "left": -8,
+                "top": 522,
+                "zoom": 2.043898578463504
               },
               "icon": "lucide-file-text",
               "title": "CEH_v13__Module_01_Introduction_to_Ethical_Hacking"
             }
           },
           {
-            "id": "1d83de2575f9537f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RedTeaming-Tactics-and-Techniques-master/SUMMARY.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SUMMARY"
-            }
-          },
-          {
-            "id": "bb5246995a059f22",
+            "id": "4e9af872c16e873f",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
                 "file": "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
-                "page": 1,
-                "zoom": 1
+                "page": 24,
+                "left": -14,
+                "top": 1117,
+                "zoom": 1.092247566119585
               },
               "icon": "lucide-file-text",
               "title": "CEHv13 - Module 01 - Introduction to Ethical Hacking"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -173,7 +147,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "88f7a455f734c0ec",
@@ -292,15 +267,23 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "bb5246995a059f22",
+  "active": "4e9af872c16e873f",
   "lastOpenFiles": [
-    "RedTeaming-Tactics-and-Techniques-master/SUMMARY.md",
-    "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
     "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
-    "CEH/CEH--official",
+    "CEH/CEH--official/CEHv13 - Module 20 - Cryptography.pdf",
+    "CEH/CEH--official/CEHv13 - Module 19 - Cloud Computing.pdf",
+    "CEH/CEH--official/CEHv13 - Module 18 - IoT and OT Hacking.pdf",
+    "CEH/CEH--official/CEHv13 - Module 17 - Hacking Mobile Platforms.pdf",
+    "CEH/CEH--official/CEHv13 - Module 16 - Hacking Wireless Networks.pdf",
+    "CEH/CEH--official/CEHv13 - Module 15 - SQL Injection.pdf",
+    "CEH/CEH--official/CEHv13 - Module 14 - Hacking Web Applications.pdf",
+    "CEH/CEH--official/CEHv13 - Module 13 - Hacking Web Servers.pdf",
+    "CEH/CEH--official/CEHv13 - Module 12 - Evading IDS, Firewalls, and Honeypots.pdf",
+    "CEH/CEH--official/CEHv13 - Module 11 - Session Hijacking.pdf",
+    "Notes/OSI Model.md",
     "CEH/ceh-v13-notes/01 - Intro.md",
-    "CEH/CEH--Quick 🦈/Module 14-15.pdf",
-    "Books 📚/CEH-Guide/CEH_Study_Guide_-_Matt_Walker.pdf",
+    "RedTeaming-Tactics-and-Techniques-master/SUMMARY.md",
+    "CEH/CEH--Quick 🦈/CEH v13 — Module 17.md",
     "CEH/CEH--Deep/Module 02: Footprinting and Reconnaissance /README.md",
     "CEH/ceh-v13-notes/Modules.md",
     "CEH/CEH-V13-Free-Resources.md",
@@ -308,8 +291,6 @@
     "CEH/CEHv13-notes-2/README.md",
     "CEH/ceh-v13-notes/03 - Scanning networks.md",
     "CEH/ceh-v13-notes/02 - footprinting and reconnaissance.md",
-    "CEH/CEHv13-notes-2/LICENSE",
-    "CEH/CEHv13-notes-2",
     "CEH/ceh-v13-notes/README.md",
     "CEH/ceh-v13-notes/69 - Boson test notes.md",
     "CEH/ceh-v13-notes/20.6.md",
@@ -324,12 +305,6 @@
     "CEH/ceh-v13-notes/19.1.md",
     "CEH/ceh-v13-notes/18.5.md",
     "CEH/ceh-v13-notes/18.4.md",
-    "CEH/ceh-v13-notes/18.3.md",
-    "CEH/ceh-v13-notes/18.2.md",
-    "CEH/ceh-v13-notes/18.1.md",
-    "CEH/ceh-v13-notes",
-    "cheatsheets/2019-01_hacking-tools-cheat-sheet.pdf",
-    "CEH--Quick 🦈/Module 14-15.pdf",
     "RedTeaming-Tactics-and-Techniques-master/lab/experiments/macros/Doc3/word/media/image1.png",
     "Files attached/Pasted image 20260319210053.png",
     "Files attached/Pasted image 20260424080121.jpg",
