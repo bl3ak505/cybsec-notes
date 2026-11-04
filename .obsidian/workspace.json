@@ -62,10 +62,10 @@
               "type": "pdf",
               "state": {
                 "file": "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
-                "page": 2,
+                "page": 1,
                 "left": -8,
-                "top": 522,
-                "zoom": 2.043898578463504
+                "top": 336,
+                "zoom": 1.8337193527224915
               },
               "icon": "lucide-file-text",
               "title": "CEH_v13__Module_01_Introduction_to_Ethical_Hacking"
@@ -78,9 +78,9 @@
               "type": "pdf",
               "state": {
                 "file": "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
-                "page": 24,
+                "page": 22,
                 "left": -14,
-                "top": 1117,
+                "top": 99,
                 "zoom": 1.092247566119585
               },
               "icon": "lucide-file-text",
@@ -270,6 +270,7 @@
   "active": "4e9af872c16e873f",
   "lastOpenFiles": [
     "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
+    "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
     "CEH/CEH--official/CEHv13 - Module 20 - Cryptography.pdf",
     "CEH/CEH--official/CEHv13 - Module 19 - Cloud Computing.pdf",
     "CEH/CEH--official/CEHv13 - Module 18 - IoT and OT Hacking.pdf",
@@ -279,7 +280,6 @@
     "CEH/CEH--official/CEHv13 - Module 14 - Hacking Web Applications.pdf",
     "CEH/CEH--official/CEHv13 - Module 13 - Hacking Web Servers.pdf",
     "CEH/CEH--official/CEHv13 - Module 12 - Evading IDS, Firewalls, and Honeypots.pdf",
-    "CEH/CEH--official/CEHv13 - Module 11 - Session Hijacking.pdf",
     "Notes/OSI Model.md",
     "CEH/ceh-v13-notes/01 - Intro.md",
     "RedTeaming-Tactics-and-Techniques-master/SUMMARY.md",
