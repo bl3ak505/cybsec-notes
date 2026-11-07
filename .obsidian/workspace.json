@@ -62,10 +62,10 @@
               "type": "pdf",
               "state": {
                 "file": "CEH/CEH--Quick 🦈/CEH_v13__Module_01_Introduction_to_Ethical_Hacking.pdf",
-                "page": 1,
-                "left": -8,
-                "top": 336,
-                "zoom": 1.8337193527224915
+                "page": 2,
+                "left": -92,
+                "top": 703,
+                "zoom": 1.6
               },
               "icon": "lucide-file-text",
               "title": "CEH_v13__Module_01_Introduction_to_Ethical_Hacking"
@@ -78,8 +78,10 @@
               "type": "pdf",
               "state": {
                 "file": "CEH/CEH--official/CEHv13 - Module 01 - Introduction to Ethical Hacking.pdf",
-                "page": 1,
-                "zoom": 1
+                "page": 23,
+                "left": -12,
+                "top": 717,
+                "zoom": 1.2174399776102993
               },
               "icon": "lucide-file-text",
               "title": "CEHv13 - Module 01 - Introduction to Ethical Hacking"
